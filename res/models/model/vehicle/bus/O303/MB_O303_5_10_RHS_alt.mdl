@@ -1,0 +1,764 @@
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 4.66, 1.35, 3.35, },
+		bbMin = { -4.71, -1.35, 0, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 5.2790269851685, 1.5140236616135, 2.5678954124451, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/bus/O303/rumpf_5.mtl", },
+						mesh = "vehicle/bus/O303/10_RHS/rumpf_alt_lod0.msh",
+						name = "rumpf",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/bus/O303/rumpf_5.mtl", },
+						mesh = "vehicle/bus/O303/grill_chrome_lod0.msh",
+						name = "rumpf",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.02, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/bus/O303/rumpf_5.mtl", },
+						mesh = "vehicle/bus/O303/rad_radkappe_lod0.msh",
+						name = "rad",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.6555, 1.12, 0.551119, 1, },
+					},
+					{
+						materials = { "vehicle/bus/O303/rumpf_5.mtl", },
+						mesh = "vehicle/bus/O303/rad_radkappe_lod0.msh",
+						name = "rad",
+						transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 2.6555, -1.12, 0.551119, 1, },
+					},
+					{
+						materials = { "vehicle/bus/O303/rumpf_5.mtl", },
+						mesh = "vehicle/bus/O303/achse_radkappe_lod0.msh",
+						name = "achse",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.517269, 0, 0.551119, 1, },
+					},
+					{
+						materials = { "vehicle/bus/O303/innen_2.mtl", },
+						mesh = "vehicle/bus/O303/10_RHS/innen_lod0.msh",
+						name = "fenster",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						animations = {
+							open_all_doors = {
+								params = {
+									id = "vehicle/bus/O303/doors/door_single.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_all_doors = {
+                                forward = false,
+								params = {
+									id = "vehicle/bus/O303/doors/door_single.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+                        materials = { "vehicle/bus/O303/rumpf_5.mtl", "vehicle/bus/O303/glas_13_RHS.mtl", },
+						mesh = "vehicle/bus/O303/tuer_hinten_einzel_lod0.msh",
+						name = "tuer hinten",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.52057, -1.2054932117462, 0.37653648853302, 1, },
+					},
+					{
+						animations = {
+							open_all_doors = {
+								params = {
+									id = "vehicle/bus/O303/doors/door_single.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_all_doors = {
+                                forward = false,
+								params = {
+									id = "vehicle/bus/O303/doors/door_single.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+                        materials = { "vehicle/bus/O303/rumpf_5.mtl", "vehicle/bus/O303/glas_13_RHS.mtl", },
+						mesh = "vehicle/bus/O303/tuer_vorne_lod0.msh",
+						name = "tuer vorne",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.3442301750183, -1.2421253919601, 0.38203132152557, 1, },
+					},
+					{
+						materials = { "vehicle/bus/O303/glas_13_RHS.mtl", },
+						mesh = "vehicle/bus/O303/10_RHS/fenster_lod0.msh",
+						name = "fenster",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/bus/O303/glas_licht.mtl", },
+						mesh = "vehicle/bus/O303/glas_scheinwerfer_lod0.msh",
+						name = "glas scheinwerfer",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.53, 0, 1.48371, 1, },
+					},
+                    -- Beleuchtung
+					{
+						_meshId = 10,
+                        materials = { "vehicle/bus/emissive/bus_all_lights.mtl", },
+						mesh = "vehicle/bus/O303/licht/licht_scheinwerfer_lod0.msh",
+						name = "fenster",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.53, 0, 1.48371, 1, },
+					},
+					{
+						_meshId = 11,
+                        materials = { "vehicle/bus/emissive/bus_all_lights.mtl", },
+						mesh = "vehicle/bus/O303/licht/licht_blinker_vorne_links_lod0.msh",
+						name = "fenster",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.53, 0, 1.48371, 1, },
+					},
+					{
+						_meshId = 12,
+                        materials = { "vehicle/bus/emissive/bus_all_lights.mtl", },
+						mesh = "vehicle/bus/O303/licht/licht_blinker_vorne_rechts_lod0.msh",
+						name = "fenster",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.53, 0, 1.48371, 1, },
+					},
+					{
+						_meshId = 13,
+                        materials = { "vehicle/bus/emissive/bus_all_lights.mtl", },
+						mesh = "vehicle/bus/O303/licht/licht_rueckleuchten_lod0.msh",
+						name = "fenster",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.652215, 0, 1.11818, 1, },
+					},
+					{
+						_meshId = 14,
+                        materials = { "vehicle/bus/emissive/bus_brake_lights.mtl", },
+						mesh = "vehicle/bus/O303/licht/licht_bremslicht_lod0.msh",
+						name = "fenster",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.652215, 0, 1.11818, 1, },
+					},
+					{
+						_meshId = 15,
+                        materials = { "vehicle/bus/emissive/bus_all_lights.mtl", },
+						mesh = "vehicle/bus/O303/licht/licht_blinker_hinten_links_lod0.msh",
+						name = "fenster",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.652215, 0, 1.11818, 1, },
+					},
+					{
+						_meshId = 16,
+                        materials = { "vehicle/bus/emissive/bus_all_lights.mtl", },
+						mesh = "vehicle/bus/O303/licht/licht_blinker_hinten_rechts_lod0.msh",
+						name = "fenster",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.652215, 0, 1.11818, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 150,
+		},
+        {
+			node = {
+				children = {
+					{
+						materials = { "vehicle/bus/O303/rumpf_5.mtl", },
+						mesh = "vehicle/bus/O303/10_RHS/rumpf_lod1.msh",
+						name = "rumpf",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/bus/O303/rumpf_5.mtl", },
+						mesh = "vehicle/bus/O303/rad_lod1.msh",
+						name = "rad",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.6555, 1.12, 0.551119, 1, },
+					},
+					{
+						materials = { "vehicle/bus/O303/rumpf_5.mtl", },
+						mesh = "vehicle/bus/O303/rad_lod1.msh",
+						name = "rad",
+						transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 2.6555, -1.12, 0.551119, 1, },
+					},
+					{
+						materials = { "vehicle/bus/O303/rumpf_5.mtl", },
+						mesh = "vehicle/bus/O303/achse_lod1.msh",
+						name = "achse",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.517269, 0, 0.551119, 1, },
+					},
+					{
+						materials = { "vehicle/bus/O303/innen_2.mtl", },
+						mesh = "vehicle/bus/O303/10_RHS/innen_lod1.msh",
+						name = "fenster",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						animations = {
+							open_all_doors = {
+								params = {
+									id = "vehicle/bus/O303/doors/door_single.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_all_doors = {
+                                forward = false,
+								params = {
+									id = "vehicle/bus/O303/doors/door_single.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+                        materials = { "vehicle/bus/O303/rumpf_5.mtl", "vehicle/bus/O303/glas_13_RHS.mtl", },
+						mesh = "vehicle/bus/O303/tuer_hinten_einzel_lod1.msh",
+						name = "tuer hinten",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.52057, -1.2054932117462, 0.37653648853302, 1, },
+					},
+					{
+						animations = {
+							open_all_doors = {
+								params = {
+									id = "vehicle/bus/O303/doors/door_single.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_all_doors = {
+                                forward = false,
+								params = {
+									id = "vehicle/bus/O303/doors/door_single.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+                        materials = { "vehicle/bus/O303/rumpf_5.mtl", "vehicle/bus/O303/glas_13_RHS.mtl", },
+						mesh = "vehicle/bus/O303/tuer_vorne_lod1.msh",
+						name = "tuer vorne",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.3442301750183, -1.2421253919601, 0.38203132152557, 1, },
+					},
+					{
+						materials = { "vehicle/bus/O303/glas_13_RHS.mtl", },
+						mesh = "vehicle/bus/O303/10_RHS/fenster_lod0.msh",
+						name = "fenster",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+                    -- Beleuchtung
+					{
+						_meshId = 9,
+                        materials = { "vehicle/bus/emissive/bus_all_lights.mtl", },
+						mesh = "vehicle/bus/O303/licht/licht_scheinwerfer_lod0.msh",
+						name = "fenster",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.53, 0, 1.48371, 1, },
+					},
+					{
+						_meshId = 10,
+                        materials = { "vehicle/bus/emissive/bus_all_lights.mtl", },
+						mesh = "vehicle/bus/O303/licht/licht_blinker_vorne_links_lod0.msh",
+						name = "fenster",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.53, 0, 1.48371, 1, },
+					},
+					{
+						_meshId = 11,
+                        materials = { "vehicle/bus/emissive/bus_all_lights.mtl", },
+						mesh = "vehicle/bus/O303/licht/licht_blinker_vorne_rechts_lod0.msh",
+						name = "fenster",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.53, 0, 1.48371, 1, },
+					},
+					{
+						_meshId = 12,
+                        materials = { "vehicle/bus/emissive/bus_all_lights.mtl", },
+						mesh = "vehicle/bus/O303/licht/licht_rueckleuchten_lod0.msh",
+						name = "fenster",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.652215, 0, 1.11818, 1, },
+					},
+					{
+						_meshId = 13,
+                        materials = { "vehicle/bus/emissive/bus_brake_lights.mtl", },
+						mesh = "vehicle/bus/O303/licht/licht_bremslicht_lod0.msh",
+						name = "fenster",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.652215, 0, 1.11818, 1, },
+					},
+					{
+						_meshId = 14,
+                        materials = { "vehicle/bus/emissive/bus_all_lights.mtl", },
+						mesh = "vehicle/bus/O303/licht/licht_blinker_hinten_links_lod0.msh",
+						name = "fenster",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.652215, 0, 1.11818, 1, },
+					},
+					{
+						_meshId = 15,
+                        materials = { "vehicle/bus/emissive/bus_all_lights.mtl", },
+						mesh = "vehicle/bus/O303/licht/licht_blinker_hinten_rechts_lod0.msh",
+						name = "fenster",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.652215, 0, 1.11818, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 150,
+			visibleTo = 400,
+		},
+        {
+			node = {
+				children = {
+					{
+						materials = { "vehicle/bus/O303/rumpf_5.mtl", },
+						mesh = "vehicle/bus/O303/10_RHS/rumpf_lod2.msh",
+						name = "rumpf",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/bus/O303/rumpf_5.mtl", },
+						mesh = "vehicle/bus/O303/rad_lod2.msh",
+						name = "rad",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.6555, 1.12, 0.551119, 1, },
+					},
+					{
+						materials = { "vehicle/bus/O303/rumpf_5.mtl", },
+						mesh = "vehicle/bus/O303/rad_lod2.msh",
+						name = "rad",
+						transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 2.6555, -1.12, 0.551119, 1, },
+					},
+					{
+						materials = { "vehicle/bus/O303/rumpf_5.mtl", },
+						mesh = "vehicle/bus/O303/achse_lod2.msh",
+						name = "achse",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.517269, 0, 0.551119, 1, },
+					},
+					{
+						materials = { "vehicle/bus/O303/innen_2.mtl", },
+						mesh = "vehicle/bus/O303/10_RHS/innen_lod2.msh",
+						name = "fenster",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						animations = {
+							open_all_doors = {
+								params = {
+									id = "vehicle/bus/O303/doors/door_single.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_all_doors = {
+                                forward = false,
+								params = {
+									id = "vehicle/bus/O303/doors/door_single.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+                        materials = { "vehicle/bus/O303/rumpf_5.mtl", "vehicle/bus/O303/glas_13_RHS.mtl", },
+						mesh = "vehicle/bus/O303/tuer_hinten_einzel_lod2.msh",
+						name = "tuer hinten",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.52057, -1.2054932117462, 0.37653648853302, 1, },
+					},
+					{
+						animations = {
+							open_all_doors = {
+								params = {
+									id = "vehicle/bus/O303/doors/door_single.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_all_doors = {
+                                forward = false,
+								params = {
+									id = "vehicle/bus/O303/doors/door_single.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+                        materials = { "vehicle/bus/O303/rumpf_5.mtl", "vehicle/bus/O303/glas_13_RHS.mtl", },
+						mesh = "vehicle/bus/O303/tuer_vorne_lod2.msh",
+						name = "tuer vorne",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.3442301750183, -1.2421253919601, 0.38203132152557, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 400,
+			visibleTo = 1400,
+		},
+	},
+	metadata = {
+		emission = {
+			idleEmission = -1,
+			powerEmission = -1,
+			speedEmission = -1,
+		},
+--[[        labelList = {
+			labels = {
+		        {
+					alignment = "CENTER",
+					childId = "RootNode",
+					color = { 0, 0, 0, 1, },
+                    filter = "LINE_NAME",
+					fitting = "SCALE",
+					renderMode = "STD",
+					size = { 0.7, 0.17, },
+					transf = { 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 4.31, -0.85, 2.79, 1, },
+					type = "LINE_NAME",
+				},
+                {
+					alignment = "CENTER",
+					childId = "RootNode",
+					color = { 0.678, 0.843, 0.71, 1, },
+					filter = "NUMBER",
+					fitting = "CUT",
+					renderMode = "EMISSIVE",
+					size = { 0.1, 0.1, },
+					transf = { 0, -1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, -5.75, 0.1, 2.8 , 1, },
+					type = "LINE_NAME",
+				},
+			},
+		}, ]]
+		availability = {
+			yearFrom = 1981,
+			yearTo = 1994,
+		},
+		cost = {
+			price = -1,
+		},
+		description = {
+			name = _("MB_O303_5_name"),
+			description = _("MB_O303_Facelift_desc"),
+		},
+		maintenance = {
+			lifespan = 21915,
+			runningCosts = -1,
+		},
+		particleSystem = {
+			emitters = {
+				{
+					child = 1,
+					color = { 0.12941175699234, 0.12941175699234, 0.12941175699234, },
+					frequency = 20,
+					initialAlpha = 0.75,
+					lifeTime = 0.5,
+					position = { -4.72, -0.93, 0.7, },
+					size01 = { 0.10000000149012, 0.89999997615814, },
+					velocity = { -0.5, 0, 0, },
+					velocityDampingFactor = 2.5,
+				},
+                {
+					child = 1,
+					color = { 0.12941175699234, 0.12941175699234, 0.12941175699234, },
+					frequency = 20,
+					initialAlpha = 0.75,
+					lifeTime = 0.5,
+					position = { -4.72, -0.86, 0.7, },
+					size01 = { 0.10000000149012, 0.89999997615814, },
+					velocity = { -0.5, 0, 0, },
+					velocityDampingFactor = 2.5,
+				},
+			},
+		},
+		roadVehicle = {
+			configs = {
+				{
+                    axles = { "vehicle/bus/O303/achse_radkappe_lod0.msh", },
+					wheels = { "vehicle/bus/O303/rad_radkappe_lod0.msh", },
+					blinkLightsLeft = { 11, 15, },
+					blinkLightsRight = { 12, 16, },
+					brakeLights = { 14, },
+					headLights = { 10, 13, },
+					steeringParts = { },
+				},
+				{
+                    axles = { "vehicle/bus/O303/achse_lod1.msh", },
+					wheels = { "vehicle/bus/O303/rad_lod1.msh", },
+					blinkLightsLeft = { 10, 14, },
+					blinkLightsRight = { 11, 15, },
+					brakeLights = { 13, },
+					headLights = { 9, 12, },
+					steeringParts = { },
+				},
+				{
+                    axles = { "vehicle/bus/O303/achse_lod2.msh", },
+					wheels = { "vehicle/bus/O303/rad_lod2.msh", },
+					blinkLightsLeft = { },
+					blinkLightsRight = { },
+					brakeLights = { },
+					headLights = { },
+					steeringParts = { },
+				},
+			},
+            soundSet = { name = "bus_modern" },
+			engine = {
+				type = "DIESEL",
+				power = 160,
+				tractiveEffort = 25,
+			},
+			topSpeed = 27.77777778,
+			weight = 10,
+		},
+		transportVehicle = {
+			carrier = "ROAD",
+            compartmentsList = {
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+							    {
+							        capacity = 44,
+                                    seats = { },
+							        type = "PASSENGERS",
+						        },
+					        },
+					        toHide = { },
+				        },
+			        },
+		        },
+	        },
+			loadSpeed = 3,
+            multipleUnitOnly = false,
+			reversible = false,
+            groupFileName = "vehicle/bus/O303/menu_MB_O303.mdl",
+		},
+		seatProvider = {
+			crewModels = {"characters/era_b_driver_road.mdl" },
+			drivingLicense = "BUS",
+			seats = {
+				-- driver
+				{
+                    animation = "driving_upright",
+					crew = true,
+					group = 0,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.65, 0.75, 1.15, 1 },
+                },
+                -- passengers
+				{
+                    animation = "sitting",
+					crew = false,
+					group = 0,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.75, 0.95, 1.25, 1 },
+                },
+				{
+                    animation = "sitting",
+					crew = false,
+					group = 0,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.75, 0.45, 1.25, 1 },
+                },
+				{
+                    animation = "sitting",
+					crew = false,
+					group = 0,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.75, -0.45, 1.25, 1 },
+                },
+				{
+                    animation = "sitting",
+					crew = false,
+					group = 0,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.75, -0.95, 1.25, 1 },
+                },
+				{
+                    animation = "sitting",
+					crew = false,
+					group = 0,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.95, 0.95, 1.25, 1 },
+                },
+				{
+                    animation = "sitting",
+					crew = false,
+					group = 0,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.95, 0.45, 1.25, 1 },
+                },
+				{
+                    animation = "sitting",
+					crew = false,
+					group = 0,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.95, -0.45, 1.25, 1 },
+                },
+				{
+                    animation = "sitting",
+					crew = false,
+					group = 0,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.95, -0.95, 1.25, 1 },
+                },
+				{
+                    animation = "sitting",
+					crew = false,
+					group = 0,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.3, 0.95, 1.25, 1 },
+                },
+				{
+                    animation = "sitting",
+					crew = false,
+					group = 0,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.3, 0.45, 1.25, 1 },
+                },
+				{
+                    animation = "sitting",
+					crew = false,
+					group = 0,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.3, -0.45, 1.25, 1 },
+                },
+				{
+                    animation = "sitting",
+					crew = false,
+					group = 0,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.3, -0.95, 1.25, 1 },
+                },
+				{
+                    animation = "sitting",
+					crew = false,
+					group = 0,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.55, 0.95, 1.25, 1 },
+                },
+				{
+                    animation = "sitting",
+					crew = false,
+					group = 0,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.55, 0.45, 1.25, 1 },
+                },
+				{
+                    animation = "sitting",
+					crew = false,
+					group = 0,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.25, 0.95, 1.25, 1 },
+                },
+				{
+                    animation = "sitting",
+					crew = false,
+					group = 0,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.25, 0.45, 1.25, 1 },
+                },
+                -- Tür
+				{
+                    animation = "sitting",
+					crew = false,
+					group = 0,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.1, 0.95, 1.25, 1 },
+                },
+				{
+                    animation = "sitting",
+					crew = false,
+					group = 0,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.1, 0.45, 1.25, 1 },
+                },
+				{
+                    animation = "sitting",
+					crew = false,
+					group = 0,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.1, -0.45, 1.25, 1 },
+                },
+				{
+                    animation = "sitting",
+					crew = false,
+					group = 0,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.1, -0.95, 1.25, 1 },
+                },
+				{
+                    animation = "sitting",
+					crew = false,
+					group = 0,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.75, 0.95, 1.25, 1 },
+                },
+				{
+                    animation = "sitting",
+					crew = false,
+					group = 0,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.75, 0.45, 1.25, 1 },
+                },
+				{
+                    animation = "sitting",
+					crew = false,
+					group = 0,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.75, -0.45, 1.25, 1 },
+                },
+				{
+                    animation = "sitting",
+					crew = false,
+					group = 0,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.75, -0.95, 1.25, 1 },
+                },
+				{
+                    animation = "sitting",
+					crew = false,
+					group = 0,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.55, 0.95, 1.25, 1 },
+                },
+				{
+                    animation = "sitting",
+					crew = false,
+					group = 0,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.55, 0.45, 1.25, 1 },
+                },
+				{
+                    animation = "sitting",
+					crew = false,
+					group = 0,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.55, -0.45, 1.25, 1 },
+                },
+				{
+                    animation = "sitting",
+					crew = false,
+					group = 0,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.55, -0.95, 1.25, 1 },
+                },
+				{
+                    animation = "sitting",
+					crew = false,
+					group = 0,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.4, 0.95, 1.25, 1 },
+                },
+				{
+                    animation = "sitting",
+					crew = false,
+					group = 0,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.4, 0.45, 1.25, 1 },
+                },
+				{
+                    animation = "sitting",
+					crew = false,
+					group = 0,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.4, -0.45, 1.25, 1 },
+                },
+				{
+                    animation = "sitting",
+					crew = false,
+					group = 0,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.4, -0.95, 1.25, 1 },
+                },
+				{
+                    animation = "sitting",
+					crew = false,
+					group = 0,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.15, 0.95, 1.4, 1 },
+                },
+				{
+                    animation = "sitting",
+					crew = false,
+					group = 0,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.15, 0.45, 1.4, 1 },
+                },
+				{
+                    animation = "sitting",
+					crew = false,
+					group = 0,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.15, 0, 1.4, 1 },
+                },
+				{
+                    animation = "sitting",
+					crew = false,
+					group = 0,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.15, -0.45, 1.4, 1 },
+                },
+				{
+                    animation = "sitting",
+					crew = false,
+					group = 0,
+                    transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.15, -0.95, 1.4, 1 },
+                },
+            },
+		},
+	},
+    version = 1,
+}
+end
