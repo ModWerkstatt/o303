@@ -21,15 +21,15 @@ return {
 			type = "TWOD",
 		},
 		map_cblend_dirt_rust = {
-			fileName = "models/vehicle/bus/O303/rumpf_3_alt_cblend_dirt_rust.dds",
+			fileName = "models/vehicle/bus/O303/rumpf_4_alt_cblend_dirt_rust.dds",
 			type = "TWOD",
 		},
 		map_metal_gloss_ao = {
-			fileName = "models/vehicle/bus/O303/rumpf_3_alt_metal_gloss_ao.dds",
+			fileName = "models/vehicle/bus/O303/rumpf_4_alt_metal_gloss_ao.dds",
 			type = "TWOD",
 		},
 		map_normal = {
-			fileName = "models/vehicle/bus/O303/rumpf_3_alt_normal.dds",
+			fileName = "models/vehicle/bus/O303/rumpf_4_alt_normal.dds",
 			redGreen = true,
 			type = "TWOD",
 		},

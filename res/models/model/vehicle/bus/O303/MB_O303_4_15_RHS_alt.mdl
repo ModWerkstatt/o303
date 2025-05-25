@@ -70,22 +70,43 @@ return {
 						animations = {
 							open_all_doors = {
 								params = {
-									id = "vehicle/bus/O303/doors/door_single.ani",
+									id = "vehicle/bus/O303/doors/door_l.ani",
 								},
 								type = "FILE_REF",
 							},
 							close_all_doors = {
                                 forward = false,
 								params = {
-									id = "vehicle/bus/O303/doors/door_single.ani",
+									id = "vehicle/bus/O303/doors/door_l.ani",
 								},
 								type = "FILE_REF",
 							},
 						},
                         materials = { "vehicle/bus/O303/rumpf_4_alt.mtl", "vehicle/bus/O303/glas_13_RHS.mtl", },
-						mesh = "vehicle/bus/O303/tuer_vorne_lod0.msh",
+						mesh = "vehicle/bus/O303/tuer_doppel_l_lod0.msh",
 						name = "tuer vorne",
-						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.3442301750183, -1.2421253919601, 0.38203132152557, 1, },
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.34423, -1.3086, 1.7282, 1, },
+					},
+					{
+						animations = {
+							open_all_doors = {
+								params = {
+									id = "vehicle/bus/O303/doors/door_r.ani",
+								},
+								type = "FILE_REF",
+							},
+							close_all_doors = {
+                                forward = false,
+								params = {
+									id = "vehicle/bus/O303/doors/door_r.ani",
+								},
+								type = "FILE_REF",
+							},
+						},
+                        materials = { "vehicle/bus/O303/rumpf_4_alt.mtl", "vehicle/bus/O303/glas_13_RHS.mtl", },
+						mesh = "vehicle/bus/O303/tuer_doppel_r_lod0.msh",
+						name = "tuer vorne",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.17664, -1.3086, 1.7282, 1, },
 					},
 					{
 						materials = { "vehicle/bus/O303/glas_13_RHS.mtl", },
