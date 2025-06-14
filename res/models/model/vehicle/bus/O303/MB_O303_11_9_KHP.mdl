@@ -402,14 +402,14 @@ return {
 			},
 		},
 		availability = {
-			yearFrom = 1981,
-			yearTo = 1995,
+			yearFrom = 1985,
+			yearTo = 2015,
 		},
 		cost = {
 			price = -1,
 		},
 		description = {
-			name = _("MB_O303_10_name"),
+			name = _("MB_O303_11_name"),
 			description = _("MB_O303_Facelift_desc"),
 		},
 		maintenance = {

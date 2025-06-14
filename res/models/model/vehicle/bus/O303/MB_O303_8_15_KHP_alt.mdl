@@ -413,15 +413,15 @@ return {
 			},
 		}, ]]
 		availability = {
-			yearFrom = 1988,
-			yearTo = 2000,
+			yearFrom = 1974,
+			yearTo = 1982,
 		},
 		cost = {
 			price = -1,
 		},
 		description = {
-			name = _("MB_O303_8_name"),
-			description = _("MB_O303_Facelift_desc"),
+			name = _("MB_O303_8_alt_name"),
+			description = _("MB_O303_desc"),
 		},
 		maintenance = {
 			lifespan = 21915,
