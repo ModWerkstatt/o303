@@ -445,7 +445,7 @@ return {
 		roadVehicle = {
 			configs = {
 				{
-                    axles = { "vehicle/bus/O303/achse_radkappe_lod0.msh", },
+                    axles = { "vehicle/bus/O303/achse_lod0.msh", },
 					wheels = { "vehicle/bus/O303/rad_radkappe_lod0.msh", },
 					blinkLightsLeft = { 11, 15, },
 					blinkLightsRight = { 12, 16, },
