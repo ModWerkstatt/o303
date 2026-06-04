@@ -1,0 +1,22 @@
+{
+    "name": "MB O 303",
+    "summary": "The package contains numerous paint schemes of the DB, DR, and DB AG.",
+    "description": "The MB O 303 is considered one of the world's most successful coaches. The series was introduced as the successor to the O 302 in 1974 and was built until 1992. In the beginning, the windscreen was still fitted with a centre bar, but from 1979 a one-piece windscreen was also offered as an option. The biggest facelift took place in 1982, when mainly the front was changed. Most of the technology was known from the predecessor and was not changed during the entire production period. There was a wide range of model series and variations, from the short 9.2 m bus to the 12 m bus, from the regular-service bus to the luxurious high-deck long-distance coach. In 1992, production ended after more than 38,000 units and the successor O 404 was introduced.",
+    "localization" : {
+        "de": {
+            "name": "MB O 303",
+            "summary": "Das Paket enthält zahlreichen Lackierungen der DB, DR und DB AG.",
+            "description": "Der MB O 303 gilt als einer der weltweit erfolgreichsten Reisebusse. Die Bauserie wurde als Nachfolger des O 302 im Jahr 1974 vorgestellt und wurde bis 1992 gebaut. Anfangs war die Scheibe noch mit einem Mittelsteg versehen, ab 1979 wurde auch optional eine einteilige Scheibe angeboten. Das größte Facelift erfolgte im Jahr 1982, bei dem vor allem die Front verändert wurde. Die meiste Technik war vom Vorgänger bekannt und wurde die gesamte Bauzeit über nicht geändert. Es gab eine große Bandbreite von Modellreihen und -variationen, vom kurzen 9,2 m-Bus bis zum 12 m-Bus, vom Linien-Omnibus bis zum luxuriösen Hochdecker-Fernreisebus. 1992 endete nach über 38.000 Stück die Fertigung und der Nachfolger O 404 wurde vorgestellt."
+        }
+    },
+    "authors": [
+        {
+            "name": "ModWerkstatt",
+            "role": "CREATOR"
+        }
+    ],
+    "tags": [
+        "Bus"
+    ],
+    "url": "https://modwerkstatt.com/downloads/tpf3/mb-o-303"
+}

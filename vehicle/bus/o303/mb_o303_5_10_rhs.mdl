@@ -1,0 +1,946 @@
+function data()
+return { 
+		boundingInfo = { 
+			bbMax = { 4.659999847412109375, 1.35000002384185791015625, 3.349999904632568359375, },
+			bbMin = { -4.71000003814697265625, -1.35000002384185791015625, 0, },
+		},
+		collider = { 
+			params = { 
+				halfExtents = { 5.27902698516845703125, 1.51402366161346435546875, 2.567895412445068359375, },
+			},
+			transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			type = "BOX",
+		},
+		lods = {
+			{ 
+				node = { 
+					children = {
+						{ 
+							materials = { "mat/rumpf_5.mtl", },
+							mesh = "msh/10_rhs/rumpf_lod0.msh",
+							name = "body",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "mat/rumpf_5.mtl", },
+							mesh = "msh/shared/rad_radkappe_lod0.msh",
+							name = "rad",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.655499935150146484375, 1.12000000476837158203125, 0.551119029521942138671875, 1, },
+						},
+						{ 
+							materials = { "mat/rumpf_5.mtl", },
+							mesh = "msh/shared/rad_radkappe_lod0.msh",
+							name = "rad",
+							transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 2.655499935150146484375, -1.12000000476837158203125, 0.551119029521942138671875, 1, },
+						},
+						{ 
+							materials = { "mat/rumpf_5.mtl", },
+							mesh = "msh/shared/achse_radkappe_lod0.msh",
+							name = "axis",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.51726901531219482421875, 0, 0.551119029521942138671875, 1, },
+						},
+						{ 
+							materials = { "mat/innen_2.mtl", },
+							mesh = "msh/10_rhs/innen_lod0.msh",
+							name = "interior",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							animations = { 
+								close_all_doors = { 
+									forward = false,
+									params = { 
+										id = "ani/doors/door_single.ani",
+									},
+									type = "FILE_REF",
+								},
+								open_all_doors = { 
+									params = { 
+										id = "ani/doors/door_single.ani",
+									},
+									type = "FILE_REF",
+								},
+							},
+							materials = { "mat/rumpf_5.mtl", "mat/glas_13_rhs.mtl", },
+							mesh = "msh/shared/tuer_hinten_einzel_lod0.msh",
+							name = "door_back",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.520569980144500732421875, -1.2054932117462158203125, 0.37653648853302001953125, 1, },
+						},
+						{ 
+							animations = { 
+								close_all_doors = { 
+									forward = false,
+									params = { 
+										id = "ani/doors/door_single.ani",
+									},
+									type = "FILE_REF",
+								},
+								open_all_doors = { 
+									params = { 
+										id = "ani/doors/door_single.ani",
+									},
+									type = "FILE_REF",
+								},
+							},
+							materials = { "mat/rumpf_5.mtl", "mat/glas_13_rhs.mtl", },
+							mesh = "msh/shared/tuer_vorne_lod0.msh",
+							name = "door_front",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.344230175018310546875, -1.24212539196014404296875, 0.38203132152557373046875, 1, },
+						},
+						{ 
+							materials = { "mat/glas_13_rhs.mtl", },
+							mesh = "msh/10_rhs/fenster_lod0.msh",
+							name = "fenster",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "mat/glas_licht.mtl", },
+							mesh = "msh/shared/glas_scheinwerfer_lod0.msh",
+							name = "glass_headlights",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.530000209808349609375, 0, 1.4837100505828857421875, 1, },
+						},
+						{ 
+							materials = { "::/vehicle/bus/emissive/bus_add_lights.mtl", },
+							mesh = "msh/licht/licht_scheinwerfer_lod0.msh",
+							name = "universal_headlights",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.530000209808349609375, 0, 1.4837100505828857421875, 1, },
+						},
+						{ 
+							animations = { 
+								blink_lights_left_off = { 
+									interpolation = "NEAREST",
+									params = { 
+										id = "::/vehicle/shared/ani/blink_lights_left_off.ani",
+									},
+									type = "FILE_REF",
+								},
+								blink_lights_left_on = { 
+									interpolation = "NEAREST",
+									params = { 
+										id = "::/vehicle/shared/ani/blink_lights_left_on.ani",
+									},
+									type = "FILE_REF",
+								},
+							},
+							materials = { "::/vehicle/bus/emissive/bus_all_lights.mtl", },
+							mesh = "msh/licht/licht_blinker_vorne_links_lod0.msh",
+							name = "indicator_front_left",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.530000209808349609375, 0, 1.4837100505828857421875, 1, },
+						},
+						{ 
+							animations = { 
+								blink_lights_right_off = { 
+									interpolation = "NEAREST",
+									params = { 
+										id = "::/vehicle/shared/ani/blink_lights_right_off.ani",
+									},
+									type = "FILE_REF",
+								},
+								blink_lights_right_on = { 
+									interpolation = "NEAREST",
+									params = { 
+										id = "::/vehicle/shared/ani/blink_lights_right_on.ani",
+									},
+									type = "FILE_REF",
+								},
+							},
+							materials = { "::/vehicle/bus/emissive/bus_all_lights.mtl", },
+							mesh = "msh/licht/licht_blinker_vorne_rechts_lod0.msh",
+							name = "indicator_front_right",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.530000209808349609375, 0, 1.4837100505828857421875, 1, },
+						},
+						{ 
+							materials = { "::/vehicle/bus/emissive/bus_add_lights.mtl", },
+							mesh = "msh/licht/licht_rueckleuchten_lod0.msh",
+							name = "universal_taillights",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.65221500396728515625, 0, 1.1181800365447998046875, 1, },
+						},
+						{ 
+							animations = { 
+								brake_lights_off = { 
+									interpolation = "NEAREST",
+									params = { 
+										id = "::/vehicle/shared/ani/brake_lights_off.ani",
+									},
+									type = "FILE_REF",
+								},
+								brake_lights_on = { 
+									interpolation = "NEAREST",
+									params = { 
+										id = "::/vehicle/shared/ani/brake_lights_on.ani",
+									},
+									type = "FILE_REF",
+								},
+							},
+							materials = { "::/vehicle/bus/emissive/bus_brake_lights.mtl", },
+							mesh = "msh/licht/licht_bremslicht_lod0.msh",
+							name = "universal_brakelights",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.65221500396728515625, 0, 1.1181800365447998046875, 1, },
+						},
+						{ 
+							animations = { 
+								blink_lights_left_off = { 
+									interpolation = "NEAREST",
+									params = { 
+										id = "::/vehicle/shared/ani/blink_lights_left_off.ani",
+									},
+									type = "FILE_REF",
+								},
+								blink_lights_left_on = { 
+									interpolation = "NEAREST",
+									params = { 
+										id = "::/vehicle/shared/ani/blink_lights_left_on.ani",
+									},
+									type = "FILE_REF",
+								},
+							},
+							materials = { "::/vehicle/bus/emissive/bus_all_lights.mtl", },
+							mesh = "msh/licht/licht_blinker_hinten_links_lod0.msh",
+							name = "indicator_back_left",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.65221500396728515625, 0, 1.1181800365447998046875, 1, },
+						},
+						{ 
+							animations = { 
+								blink_lights_right_off = { 
+									interpolation = "NEAREST",
+									params = { 
+										id = "::/vehicle/shared/ani/blink_lights_right_off.ani",
+									},
+									type = "FILE_REF",
+								},
+								blink_lights_right_on = { 
+									interpolation = "NEAREST",
+									params = { 
+										id = "::/vehicle/shared/ani/blink_lights_right_on.ani",
+									},
+									type = "FILE_REF",
+								},
+							},
+							materials = { "::/vehicle/bus/emissive/bus_all_lights.mtl", },
+							mesh = "msh/licht/licht_blinker_hinten_rechts_lod0.msh",
+							name = "indicator_back_right",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.65221500396728515625, 0, 1.1181800365447998046875, 1, },
+						},
+					},
+					name = "RootNode",
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+				},
+				visibleFrom = 0,
+				visibleTo = 150,
+			},
+			{ 
+				node = { 
+					children = {
+						{ 
+							materials = { "mat/rumpf_5.mtl", },
+							mesh = "msh/10_rhs/rumpf_lod1.msh",
+							name = "body",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "mat/rumpf_5.mtl", },
+							mesh = "msh/shared/rad_lod1.msh",
+							name = "rad",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.655499935150146484375, 1.12000000476837158203125, 0.551119029521942138671875, 1, },
+						},
+						{ 
+							materials = { "mat/rumpf_5.mtl", },
+							mesh = "msh/shared/rad_lod1.msh",
+							name = "rad",
+							transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 2.655499935150146484375, -1.12000000476837158203125, 0.551119029521942138671875, 1, },
+						},
+						{ 
+							materials = { "mat/rumpf_5.mtl", },
+							mesh = "msh/shared/achse_lod1.msh",
+							name = "axis",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.51726901531219482421875, 0, 0.551119029521942138671875, 1, },
+						},
+						{ 
+							materials = { "mat/innen_2.mtl", },
+							mesh = "msh/10_rhs/innen_lod1.msh",
+							name = "interior",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							animations = { 
+								close_all_doors = { 
+									forward = false,
+									params = { 
+										id = "ani/doors/door_single.ani",
+									},
+									type = "FILE_REF",
+								},
+								open_all_doors = { 
+									params = { 
+										id = "ani/doors/door_single.ani",
+									},
+									type = "FILE_REF",
+								},
+							},
+							materials = { "mat/rumpf_5.mtl", "mat/glas_13_rhs.mtl", },
+							mesh = "msh/shared/tuer_hinten_einzel_lod1.msh",
+							name = "door_back",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.520569980144500732421875, -1.2054932117462158203125, 0.37653648853302001953125, 1, },
+						},
+						{ 
+							animations = { 
+								close_all_doors = { 
+									forward = false,
+									params = { 
+										id = "ani/doors/door_single.ani",
+									},
+									type = "FILE_REF",
+								},
+								open_all_doors = { 
+									params = { 
+										id = "ani/doors/door_single.ani",
+									},
+									type = "FILE_REF",
+								},
+							},
+							materials = { "mat/rumpf_5.mtl", "mat/glas_13_rhs.mtl", },
+							mesh = "msh/shared/tuer_vorne_lod1.msh",
+							name = "door_front",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.344230175018310546875, -1.24212539196014404296875, 0.38203132152557373046875, 1, },
+						},
+						{ 
+							materials = { "mat/glas_13_rhs.mtl", },
+							mesh = "msh/10_rhs/fenster_lod0.msh",
+							name = "fenster",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "::/vehicle/bus/emissive/bus_add_lights.mtl", },
+							mesh = "msh/licht/licht_scheinwerfer_lod0.msh",
+							name = "universal_headlights",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.530000209808349609375, 0, 1.4837100505828857421875, 1, },
+						},
+						{ 
+							animations = { 
+								blink_lights_left_off = { 
+									interpolation = "NEAREST",
+									params = { 
+										id = "::/vehicle/shared/ani/blink_lights_left_off.ani",
+									},
+									type = "FILE_REF",
+								},
+								blink_lights_left_on = { 
+									interpolation = "NEAREST",
+									params = { 
+										id = "::/vehicle/shared/ani/blink_lights_left_on.ani",
+									},
+									type = "FILE_REF",
+								},
+							},
+							materials = { "::/vehicle/bus/emissive/bus_all_lights.mtl", },
+							mesh = "msh/licht/licht_blinker_vorne_links_lod0.msh",
+							name = "indicator_front_left",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.530000209808349609375, 0, 1.4837100505828857421875, 1, },
+						},
+						{ 
+							animations = { 
+								blink_lights_right_off = { 
+									interpolation = "NEAREST",
+									params = { 
+										id = "::/vehicle/shared/ani/blink_lights_right_off.ani",
+									},
+									type = "FILE_REF",
+								},
+								blink_lights_right_on = { 
+									interpolation = "NEAREST",
+									params = { 
+										id = "::/vehicle/shared/ani/blink_lights_right_on.ani",
+									},
+									type = "FILE_REF",
+								},
+							},
+							materials = { "::/vehicle/bus/emissive/bus_all_lights.mtl", },
+							mesh = "msh/licht/licht_blinker_vorne_rechts_lod0.msh",
+							name = "indicator_front_right",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.530000209808349609375, 0, 1.4837100505828857421875, 1, },
+						},
+						{ 
+							materials = { "::/vehicle/bus/emissive/bus_add_lights.mtl", },
+							mesh = "msh/licht/licht_rueckleuchten_lod0.msh",
+							name = "universal_taillights",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.65221500396728515625, 0, 1.1181800365447998046875, 1, },
+						},
+						{ 
+							animations = { 
+								brake_lights_off = { 
+									interpolation = "NEAREST",
+									params = { 
+										id = "::/vehicle/shared/ani/brake_lights_off.ani",
+									},
+									type = "FILE_REF",
+								},
+								brake_lights_on = { 
+									interpolation = "NEAREST",
+									params = { 
+										id = "::/vehicle/shared/ani/brake_lights_on.ani",
+									},
+									type = "FILE_REF",
+								},
+							},
+							materials = { "::/vehicle/bus/emissive/bus_brake_lights.mtl", },
+							mesh = "msh/licht/licht_bremslicht_lod0.msh",
+							name = "universal_brakelights",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.65221500396728515625, 0, 1.1181800365447998046875, 1, },
+						},
+						{ 
+							animations = { 
+								blink_lights_left_off = { 
+									interpolation = "NEAREST",
+									params = { 
+										id = "::/vehicle/shared/ani/blink_lights_left_off.ani",
+									},
+									type = "FILE_REF",
+								},
+								blink_lights_left_on = { 
+									interpolation = "NEAREST",
+									params = { 
+										id = "::/vehicle/shared/ani/blink_lights_left_on.ani",
+									},
+									type = "FILE_REF",
+								},
+							},
+							materials = { "::/vehicle/bus/emissive/bus_all_lights.mtl", },
+							mesh = "msh/licht/licht_blinker_hinten_links_lod0.msh",
+							name = "indicator_back_left",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.65221500396728515625, 0, 1.1181800365447998046875, 1, },
+						},
+						{ 
+							animations = { 
+								blink_lights_right_off = { 
+									interpolation = "NEAREST",
+									params = { 
+										id = "::/vehicle/shared/ani/blink_lights_right_off.ani",
+									},
+									type = "FILE_REF",
+								},
+								blink_lights_right_on = { 
+									interpolation = "NEAREST",
+									params = { 
+										id = "::/vehicle/shared/ani/blink_lights_right_on.ani",
+									},
+									type = "FILE_REF",
+								},
+							},
+							materials = { "::/vehicle/bus/emissive/bus_all_lights.mtl", },
+							mesh = "msh/licht/licht_blinker_hinten_rechts_lod0.msh",
+							name = "indicator_back_right",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.65221500396728515625, 0, 1.1181800365447998046875, 1, },
+						},
+					},
+					name = "RootNode",
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+				},
+				visibleFrom = 150,
+				visibleTo = 400,
+			},
+			{ 
+				node = { 
+					children = {
+						{ 
+							materials = { "mat/rumpf_5.mtl", },
+							mesh = "msh/10_rhs/rumpf_lod2.msh",
+							name = "body",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							materials = { "mat/rumpf_5.mtl", },
+							mesh = "msh/shared/rad_lod2.msh",
+							name = "rad",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.655499935150146484375, 1.12000000476837158203125, 0.551119029521942138671875, 1, },
+						},
+						{ 
+							materials = { "mat/rumpf_5.mtl", },
+							mesh = "msh/shared/rad_lod2.msh",
+							name = "rad",
+							transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 2.655499935150146484375, -1.12000000476837158203125, 0.551119029521942138671875, 1, },
+						},
+						{ 
+							materials = { "mat/rumpf_5.mtl", },
+							mesh = "msh/shared/achse_lod2.msh",
+							name = "axis",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.51726901531219482421875, 0, 0.551119029521942138671875, 1, },
+						},
+						{ 
+							materials = { "mat/innen_2.mtl", },
+							mesh = "msh/10_rhs/innen_lod2.msh",
+							name = "fenster",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+						},
+						{ 
+							animations = { 
+								close_all_doors = { 
+									forward = false,
+									params = { 
+										id = "ani/doors/door_single.ani",
+									},
+									type = "FILE_REF",
+								},
+								open_all_doors = { 
+									params = { 
+										id = "ani/doors/door_single.ani",
+									},
+									type = "FILE_REF",
+								},
+							},
+							materials = { "mat/rumpf_5.mtl", "mat/glas_13_rhs.mtl", },
+							mesh = "msh/shared/tuer_hinten_einzel_lod2.msh",
+							name = "door_back",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.520569980144500732421875, -1.2054932117462158203125, 0.37653648853302001953125, 1, },
+						},
+						{ 
+							animations = { 
+								close_all_doors = { 
+									forward = false,
+									params = { 
+										id = "ani/doors/door_single.ani",
+									},
+									type = "FILE_REF",
+								},
+								open_all_doors = { 
+									params = { 
+										id = "ani/doors/door_single.ani",
+									},
+									type = "FILE_REF",
+								},
+							},
+							materials = { "mat/rumpf_5.mtl", "mat/glas_13_rhs.mtl", },
+							mesh = "msh/shared/tuer_vorne_lod2.msh",
+							name = "door_front",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.344230175018310546875, -1.24212539196014404296875, 0.38203132152557373046875, 1, },
+						},
+					},
+					name = "RootNode",
+					transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+				},
+				visibleFrom = 400,
+				visibleTo = 1400,
+			},
+		},
+		metadata = { 
+			availability = { 
+				yearFrom = 1981,
+				yearTo = 1994,
+			},
+			cost = { 
+				price = -1,
+			},
+			description = { 
+				description = _("MB_O303_Facelift_desc"),
+				name = _("MB_O303_5_name"),
+			},
+			emissions = { 
+				noise = { 
+					idle = -1,
+					power = -1,
+					speed = -1,
+				},
+				pollution = { 
+					idle = -1,
+					power = -1,
+					speed = -1,
+				},
+			},
+			landVehicle = { 
+				engines = {
+					{ 
+						power = 160,
+						tractiveEffort = 25,
+						type = "DIESEL",
+					},
+				},
+				topSpeed = 27.77777862548828125,
+				weightEmpty = 10000,
+				weightMaxPayload = 0,
+			},
+			maintenance = { 
+				lifespan = 21915,
+				runningCosts = -1,
+			},
+			particleSystem = { 
+				emitters = {
+					{ 
+						alphaOverLifeTime = { 
+							curve = {
+								{ 
+									easing = "Linear",
+									time = 0,
+									value = 0.75,
+								},
+								{ 
+									easing = "Linear",
+									time = 1,
+									value = 0,
+								},
+							},
+						},
+						child = "body",
+						colorOverLifeTime = { 
+							curve = {
+								{ 
+									easing = "Linear",
+									time = 1,
+									value = { 0.129411756992340087890625, 0.129411756992340087890625, 0.129411756992340087890625, },
+								},
+							},
+						},
+						frequency = { 
+							value = 20,
+						},
+						lifeTime = { 
+							randomMinMax = { 
+								max = 0.5,
+								min = 0.25,
+							},
+						},
+						particleId = "",
+						position = { -4.719999790191650390625, -0.930000007152557373046875, 0.699999988079071044921875, },
+						shape = { 
+							point = { 
+								maxDir = 0.800000011920928955078125,
+							},
+						},
+						sizeOverLifeTime = { 
+							curve = {
+								{ 
+									easing = "Linear",
+									time = 0,
+									value = { 
+										value = 0.100000001490116119384765625,
+									},
+								},
+								{ 
+									easing = "EaseOutSqrt",
+									time = 4,
+									value = { 
+										value = 0.89999997615814208984375,
+									},
+								},
+							},
+						},
+						velocity = { 
+							value = { -0.5, 0, 0, },
+						},
+						velocityByDirection = { 
+							value = 0,
+						},
+					},
+					{ 
+						alphaOverLifeTime = { 
+							curve = {
+								{ 
+									easing = "Linear",
+									time = 0,
+									value = 0.75,
+								},
+								{ 
+									easing = "Linear",
+									time = 1,
+									value = 0,
+								},
+							},
+						},
+						child = "body",
+						colorOverLifeTime = { 
+							curve = {
+								{ 
+									easing = "Linear",
+									time = 1,
+									value = { 0.129411756992340087890625, 0.129411756992340087890625, 0.129411756992340087890625, },
+								},
+							},
+						},
+						frequency = { 
+							value = 20,
+						},
+						lifeTime = { 
+							randomMinMax = { 
+								max = 0.5,
+								min = 0.25,
+							},
+						},
+						particleId = "",
+						position = { -4.719999790191650390625, -0.86000001430511474609375, 0.699999988079071044921875, },
+						shape = { 
+							point = { 
+								maxDir = 0.800000011920928955078125,
+							},
+						},
+						sizeOverLifeTime = { 
+							curve = {
+								{ 
+									easing = "Linear",
+									time = 0,
+									value = { 
+										value = 0.100000001490116119384765625,
+									},
+								},
+								{ 
+									easing = "EaseOutSqrt",
+									time = 4,
+									value = { 
+										value = 0.89999997615814208984375,
+									},
+								},
+							},
+						},
+						velocity = { 
+							value = { -0.5, 0, 0, },
+						},
+						velocityByDirection = { 
+							value = 0,
+						},
+					},
+				},
+			},
+			roadVehicle = { 
+				config = { 
+					axles = { "axis", },
+					fakeBogies = { },
+					steeringParts = { },
+					wheels = { "rad", },
+				},
+			},
+			seatProvider = { 
+				crewModels = { "/characters/era_b_driver_road.mdl", },
+				drivingLicense = "BUS",
+				seats = {
+					{ 
+						animation = "driving_upright",
+						crew = true,
+						group = "RootNode",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.650000095367431640625, 0.75, 1.14999997615814208984375, 1, },
+					},
+					{ 
+						animation = "sitting",
+						group = "RootNode",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.75, 0.949999988079071044921875, 1.25, 1, },
+					},
+					{ 
+						animation = "sitting",
+						group = "RootNode",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.75, 0.449999988079071044921875, 1.25, 1, },
+					},
+					{ 
+						animation = "sitting",
+						group = "RootNode",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.75, -0.449999988079071044921875, 1.25, 1, },
+					},
+					{ 
+						animation = "sitting",
+						group = "RootNode",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.75, -0.949999988079071044921875, 1.25, 1, },
+					},
+					{ 
+						animation = "sitting",
+						group = "RootNode",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.9500000476837158203125, 0.949999988079071044921875, 1.25, 1, },
+					},
+					{ 
+						animation = "sitting",
+						group = "RootNode",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.9500000476837158203125, 0.449999988079071044921875, 1.25, 1, },
+					},
+					{ 
+						animation = "sitting",
+						group = "RootNode",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.9500000476837158203125, -0.449999988079071044921875, 1.25, 1, },
+					},
+					{ 
+						animation = "sitting",
+						group = "RootNode",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.9500000476837158203125, -0.949999988079071044921875, 1.25, 1, },
+					},
+					{ 
+						animation = "sitting",
+						group = "RootNode",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2999999523162841796875, 0.949999988079071044921875, 1.25, 1, },
+					},
+					{ 
+						animation = "sitting",
+						group = "RootNode",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2999999523162841796875, 0.449999988079071044921875, 1.25, 1, },
+					},
+					{ 
+						animation = "sitting",
+						group = "RootNode",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2999999523162841796875, -0.449999988079071044921875, 1.25, 1, },
+					},
+					{ 
+						animation = "sitting",
+						group = "RootNode",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2999999523162841796875, -0.949999988079071044921875, 1.25, 1, },
+					},
+					{ 
+						animation = "sitting",
+						group = "RootNode",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.550000011920928955078125, 0.949999988079071044921875, 1.25, 1, },
+					},
+					{ 
+						animation = "sitting",
+						group = "RootNode",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.550000011920928955078125, 0.449999988079071044921875, 1.25, 1, },
+					},
+					{ 
+						animation = "sitting",
+						group = "RootNode",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.25, 0.949999988079071044921875, 1.25, 1, },
+					},
+					{ 
+						animation = "sitting",
+						group = "RootNode",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.25, 0.449999988079071044921875, 1.25, 1, },
+					},
+					{ 
+						animation = "sitting",
+						group = "RootNode",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.10000002384185791015625, 0.949999988079071044921875, 1.25, 1, },
+					},
+					{ 
+						animation = "sitting",
+						group = "RootNode",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.10000002384185791015625, 0.449999988079071044921875, 1.25, 1, },
+					},
+					{ 
+						animation = "sitting",
+						group = "RootNode",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.10000002384185791015625, -0.449999988079071044921875, 1.25, 1, },
+					},
+					{ 
+						animation = "sitting",
+						group = "RootNode",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.10000002384185791015625, -0.949999988079071044921875, 1.25, 1, },
+					},
+					{ 
+						animation = "sitting",
+						group = "RootNode",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.75, 0.949999988079071044921875, 1.25, 1, },
+					},
+					{ 
+						animation = "sitting",
+						group = "RootNode",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.75, 0.449999988079071044921875, 1.25, 1, },
+					},
+					{ 
+						animation = "sitting",
+						group = "RootNode",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.75, -0.449999988079071044921875, 1.25, 1, },
+					},
+					{ 
+						animation = "sitting",
+						group = "RootNode",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.75, -0.949999988079071044921875, 1.25, 1, },
+					},
+					{ 
+						animation = "sitting",
+						group = "RootNode",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.5499999523162841796875, 0.949999988079071044921875, 1.25, 1, },
+					},
+					{ 
+						animation = "sitting",
+						group = "RootNode",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.5499999523162841796875, 0.449999988079071044921875, 1.25, 1, },
+					},
+					{ 
+						animation = "sitting",
+						group = "RootNode",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.5499999523162841796875, -0.449999988079071044921875, 1.25, 1, },
+					},
+					{ 
+						animation = "sitting",
+						group = "RootNode",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.5499999523162841796875, -0.949999988079071044921875, 1.25, 1, },
+					},
+					{ 
+						animation = "sitting",
+						group = "RootNode",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.400000095367431640625, 0.949999988079071044921875, 1.25, 1, },
+					},
+					{ 
+						animation = "sitting",
+						group = "RootNode",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.400000095367431640625, 0.449999988079071044921875, 1.25, 1, },
+					},
+					{ 
+						animation = "sitting",
+						group = "RootNode",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.400000095367431640625, -0.449999988079071044921875, 1.25, 1, },
+					},
+					{ 
+						animation = "sitting",
+						group = "RootNode",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.400000095367431640625, -0.949999988079071044921875, 1.25, 1, },
+					},
+					{ 
+						animation = "sitting",
+						group = "RootNode",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.150000095367431640625, 0.949999988079071044921875, 1.39999997615814208984375, 1, },
+					},
+					{ 
+						animation = "sitting",
+						group = "RootNode",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.150000095367431640625, 0.449999988079071044921875, 1.39999997615814208984375, 1, },
+					},
+					{ 
+						animation = "sitting",
+						group = "RootNode",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.150000095367431640625, 0, 1.39999997615814208984375, 1, },
+					},
+					{ 
+						animation = "sitting",
+						group = "RootNode",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.150000095367431640625, -0.449999988079071044921875, 1.39999997615814208984375, 1, },
+					},
+					{ 
+						animation = "sitting",
+						group = "RootNode",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.150000095367431640625, -0.949999988079071044921875, 1.39999997615814208984375, 1, },
+					},
+				},
+			},
+			soundConfig = { 
+				soundSet = { 
+					name = "::/vehicle/bus/shared/sound/bus_modern.snd",
+				},
+			},
+			transformatorConfig = { 
+				skipFromLod = 1,
+				transformator = { 
+					name = "::/vehicle/shared/default_road.trf",
+				},
+			},
+			transportVehicle = { 
+				carrier = "ROAD",
+				compartments = {
+					{ 
+						loadConfigs = {
+							{ 
+								cargoEntry = { 
+									capacity = 44,
+									cargoTypeSet = { 
+										cargoClassesExcluded = { },
+										cargoClassesIncluded = { },
+										cargoTypesExcluded = { },
+										cargoTypesIncluded = { "::/cargos/passengers/passengers.cargo", },
+									},
+									loadIndicator = "",
+									seats = { },
+								},
+								toHide = { },
+							},
+						},
+					},
+				},
+				engineTags = { "BUS", },
+				groupFileName = "menu_mb_o303.mdl",
+				loadSpeed = 3,
+				tags = { "BUS", },
+			},
+		},
+		version = 2,
+	}
+end
