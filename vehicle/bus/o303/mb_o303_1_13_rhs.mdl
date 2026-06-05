@@ -1,61 +1,61 @@
 function data()
-return { 
-		boundingInfo = { 
-			bbMax = { 4.659999847412109375, 1.35000002384185791015625, 3.349999904632568359375, },
-			bbMin = { -5.889999866485595703125, -1.35000002384185791015625, 0, },
+return {
+		boundingInfo = {
+			bbMax = { 11.63000011444091796875, 4.55000019073486328125, 6.099999904632568359375, },
+			bbMin = { -9, -4.55000019073486328125, -3.462200641632080078125, },
 		},
-		collider = { 
-			params = { 
+		collider = {
+			params = {
 				halfExtents = { 5.27902698516845703125, 1.51402366161346435546875, 2.567895412445068359375, },
 			},
 			transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 			type = "BOX",
 		},
 		lods = {
-			{ 
-				node = { 
+			{
+				node = {
 					children = {
-						{ 
+						{
 							materials = { "mat/rumpf_1.mtl", },
 							mesh = "msh/13_rhs/rumpf_lod0.msh",
 							name = "body",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 						},
-						{ 
+						{
 							materials = { "mat/rumpf_1.mtl", },
 							mesh = "msh/shared/rad_lod0.msh",
 							name = "wheel_left",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.65550708770751953125, 1.12000000476837158203125, 0.551119029521942138671875, 1, },
 						},
-						{ 
+						{
 							materials = { "mat/rumpf_1.mtl", },
 							mesh = "msh/shared/rad_lod0.msh",
 							name = "wheel_right",
 							transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 2.65550708770751953125, -1.12000000476837158203125, 0.551119029521942138671875, 1, },
 						},
-						{ 
+						{
 							materials = { "mat/rumpf_1.mtl", },
 							mesh = "msh/shared/achse_lod0.msh",
 							name = "axis",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.6936931610107421875, 0, 0.551119029521942138671875, 1, },
 						},
-						{ 
+						{
 							materials = { "mat/innen_1.mtl", },
 							mesh = "msh/13_rhs/innen_lod0.msh",
 							name = "interior",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 						},
-						{ 
-							animations = { 
-								close_all_doors = { 
+						{
+							animations = {
+								close_all_doors = {
 									forward = false,
-									params = { 
+									params = {
 										id = "ani/doors/door_single.ani",
 									},
 									type = "FILE_REF",
 								},
-								open_all_doors = { 
-									params = { 
+								open_all_doors = {
+									params = {
 										id = "ani/doors/door_single.ani",
 									},
 									type = "FILE_REF",
@@ -66,17 +66,17 @@ return {
 							name = "door_back",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.650420010089874267578125, -1.2054932117462158203125, 0.37653648853302001953125, 1, },
 						},
-						{ 
-							animations = { 
-								close_all_doors = { 
+						{
+							animations = {
+								close_all_doors = {
 									forward = false,
-									params = { 
+									params = {
 										id = "ani/doors/door_single.ani",
 									},
 									type = "FILE_REF",
 								},
-								open_all_doors = { 
-									params = { 
+								open_all_doors = {
+									params = {
 										id = "ani/doors/door_single.ani",
 									},
 									type = "FILE_REF",
@@ -87,36 +87,36 @@ return {
 							name = "door_front",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.344230175018310546875, -1.24212539196014404296875, 0.38203132152557373046875, 1, },
 						},
-						{ 
+						{
 							materials = { "mat/glas_13_rhs.mtl", },
 							mesh = "msh/13_rhs/fenster_lod0.msh",
 							name = "windows",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 						},
-						{ 
+						{
 							materials = { "mat/glas_licht.mtl", },
 							mesh = "msh/shared/glas_scheinwerfer_lod0.msh",
 							name = "glass_headlights",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.530000209808349609375, 0, 1.4837100505828857421875, 1, },
 						},
-						{ 
+						{
 							materials = { "::/vehicle/bus/emissive/bus_add_lights.mtl", },
 							mesh = "msh/licht/licht_scheinwerfer_lod0.msh",
 							name = "universal_headlights",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.530000209808349609375, 0, 1.4837100505828857421875, 1, },
 						},
-						{ 
-							animations = { 
-								blink_lights_left_off = { 
+						{
+							animations = {
+								blink_lights_left_off = {
 									interpolation = "NEAREST",
-									params = { 
+									params = {
 										id = "::/vehicle/shared/ani/blink_lights_left_off.ani",
 									},
 									type = "FILE_REF",
 								},
-								blink_lights_left_on = { 
+								blink_lights_left_on = {
 									interpolation = "NEAREST",
-									params = { 
+									params = {
 										id = "::/vehicle/shared/ani/blink_lights_left_on.ani",
 									},
 									type = "FILE_REF",
@@ -127,18 +127,18 @@ return {
 							name = "indicator_front_left",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.530000209808349609375, 0, 1.4837100505828857421875, 1, },
 						},
-						{ 
-							animations = { 
-								blink_lights_right_off = { 
+						{
+							animations = {
+								blink_lights_right_off = {
 									interpolation = "NEAREST",
-									params = { 
+									params = {
 										id = "::/vehicle/shared/ani/blink_lights_right_off.ani",
 									},
 									type = "FILE_REF",
 								},
-								blink_lights_right_on = { 
+								blink_lights_right_on = {
 									interpolation = "NEAREST",
-									params = { 
+									params = {
 										id = "::/vehicle/shared/ani/blink_lights_right_on.ani",
 									},
 									type = "FILE_REF",
@@ -149,24 +149,24 @@ return {
 							name = "indicator_front_right",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.530000209808349609375, 0, 1.4837100505828857421875, 1, },
 						},
-						{ 
+						{
 							materials = { "::/vehicle/bus/emissive/bus_add_lights.mtl", },
 							mesh = "msh/licht/licht_rueckleuchten_lod0.msh",
 							name = "universal_taillights",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.82215023040771484375, 0, 1.1181800365447998046875, 1, },
 						},
-						{ 
-							animations = { 
-								brake_lights_off = { 
+						{
+							animations = {
+								brake_lights_off = {
 									interpolation = "NEAREST",
-									params = { 
+									params = {
 										id = "::/vehicle/shared/ani/brake_lights_off.ani",
 									},
 									type = "FILE_REF",
 								},
-								brake_lights_on = { 
+								brake_lights_on = {
 									interpolation = "NEAREST",
-									params = { 
+									params = {
 										id = "::/vehicle/shared/ani/brake_lights_on.ani",
 									},
 									type = "FILE_REF",
@@ -177,18 +177,18 @@ return {
 							name = "universal_brakelights",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.82215023040771484375, 0, 1.1181800365447998046875, 1, },
 						},
-						{ 
-							animations = { 
-								blink_lights_left_off = { 
+						{
+							animations = {
+								blink_lights_left_off = {
 									interpolation = "NEAREST",
-									params = { 
+									params = {
 										id = "::/vehicle/shared/ani/blink_lights_left_off.ani",
 									},
 									type = "FILE_REF",
 								},
-								blink_lights_left_on = { 
+								blink_lights_left_on = {
 									interpolation = "NEAREST",
-									params = { 
+									params = {
 										id = "::/vehicle/shared/ani/blink_lights_left_on.ani",
 									},
 									type = "FILE_REF",
@@ -199,18 +199,18 @@ return {
 							name = "indicator_back_left",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.82215023040771484375, 0, 1.1181800365447998046875, 1, },
 						},
-						{ 
-							animations = { 
-								blink_lights_right_off = { 
+						{
+							animations = {
+								blink_lights_right_off = {
 									interpolation = "NEAREST",
-									params = { 
+									params = {
 										id = "::/vehicle/shared/ani/blink_lights_right_off.ani",
 									},
 									type = "FILE_REF",
 								},
-								blink_lights_right_on = { 
+								blink_lights_right_on = {
 									interpolation = "NEAREST",
-									params = { 
+									params = {
 										id = "::/vehicle/shared/ani/blink_lights_right_on.ani",
 									},
 									type = "FILE_REF",
@@ -228,50 +228,50 @@ return {
 				visibleFrom = 0,
 				visibleTo = 150,
 			},
-			{ 
-				node = { 
+			{
+				node = {
 					children = {
-						{ 
+						{
 							materials = { "mat/rumpf_1.mtl", },
 							mesh = "msh/13_rhs/rumpf_lod1.msh",
 							name = "body",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 						},
-						{ 
+						{
 							materials = { "mat/rumpf_1.mtl", },
 							mesh = "msh/shared/rad_lod1.msh",
 							name = "wheel_left",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.65550708770751953125, 1.12000000476837158203125, 0.551119029521942138671875, 1, },
 						},
-						{ 
+						{
 							materials = { "mat/rumpf_1.mtl", },
 							mesh = "msh/shared/rad_lod1.msh",
 							name = "wheel_right",
 							transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 2.65550708770751953125, -1.12000000476837158203125, 0.551119029521942138671875, 1, },
 						},
-						{ 
+						{
 							materials = { "mat/rumpf_1.mtl", },
 							mesh = "msh/shared/achse_lod1.msh",
 							name = "axis",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.6936931610107421875, 0, 0.551119029521942138671875, 1, },
 						},
-						{ 
+						{
 							materials = { "mat/innen_1.mtl", },
 							mesh = "msh/13_rhs/innen_lod1.msh",
 							name = "interior",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 						},
-						{ 
-							animations = { 
-								close_all_doors = { 
+						{
+							animations = {
+								close_all_doors = {
 									forward = false,
-									params = { 
+									params = {
 										id = "ani/doors/door_single.ani",
 									},
 									type = "FILE_REF",
 								},
-								open_all_doors = { 
-									params = { 
+								open_all_doors = {
+									params = {
 										id = "ani/doors/door_single.ani",
 									},
 									type = "FILE_REF",
@@ -282,17 +282,17 @@ return {
 							name = "door_back",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.650420010089874267578125, -1.2054932117462158203125, 0.37653648853302001953125, 1, },
 						},
-						{ 
-							animations = { 
-								close_all_doors = { 
+						{
+							animations = {
+								close_all_doors = {
 									forward = false,
-									params = { 
+									params = {
 										id = "ani/doors/door_single.ani",
 									},
 									type = "FILE_REF",
 								},
-								open_all_doors = { 
-									params = { 
+								open_all_doors = {
+									params = {
 										id = "ani/doors/door_single.ani",
 									},
 									type = "FILE_REF",
@@ -303,30 +303,30 @@ return {
 							name = "door_front",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.344230175018310546875, -1.24212539196014404296875, 0.38203132152557373046875, 1, },
 						},
-						{ 
+						{
 							materials = { "mat/glas_13_rhs.mtl", },
 							mesh = "msh/13_rhs/fenster_lod1.msh",
 							name = "fenster",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 						},
-						{ 
+						{
 							materials = { "::/vehicle/bus/emissive/bus_add_lights.mtl", },
 							mesh = "msh/licht/licht_scheinwerfer_lod0.msh",
 							name = "universal_headlights",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.530000209808349609375, 0, 1.4837100505828857421875, 1, },
 						},
-						{ 
-							animations = { 
-								blink_lights_left_off = { 
+						{
+							animations = {
+								blink_lights_left_off = {
 									interpolation = "NEAREST",
-									params = { 
+									params = {
 										id = "::/vehicle/shared/ani/blink_lights_left_off.ani",
 									},
 									type = "FILE_REF",
 								},
-								blink_lights_left_on = { 
+								blink_lights_left_on = {
 									interpolation = "NEAREST",
-									params = { 
+									params = {
 										id = "::/vehicle/shared/ani/blink_lights_left_on.ani",
 									},
 									type = "FILE_REF",
@@ -337,18 +337,18 @@ return {
 							name = "indicator_front_left",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.530000209808349609375, 0, 1.4837100505828857421875, 1, },
 						},
-						{ 
-							animations = { 
-								blink_lights_right_off = { 
+						{
+							animations = {
+								blink_lights_right_off = {
 									interpolation = "NEAREST",
-									params = { 
+									params = {
 										id = "::/vehicle/shared/ani/blink_lights_right_off.ani",
 									},
 									type = "FILE_REF",
 								},
-								blink_lights_right_on = { 
+								blink_lights_right_on = {
 									interpolation = "NEAREST",
-									params = { 
+									params = {
 										id = "::/vehicle/shared/ani/blink_lights_right_on.ani",
 									},
 									type = "FILE_REF",
@@ -359,24 +359,24 @@ return {
 							name = "indicator_front_right",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.530000209808349609375, 0, 1.4837100505828857421875, 1, },
 						},
-						{ 
+						{
 							materials = { "::/vehicle/bus/emissive/bus_add_lights.mtl", },
 							mesh = "msh/licht/licht_rueckleuchten_lod0.msh",
 							name = "universal_taillights",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.82215023040771484375, 0, 1.1181800365447998046875, 1, },
 						},
-						{ 
-							animations = { 
-								brake_lights_off = { 
+						{
+							animations = {
+								brake_lights_off = {
 									interpolation = "NEAREST",
-									params = { 
+									params = {
 										id = "::/vehicle/shared/ani/brake_lights_off.ani",
 									},
 									type = "FILE_REF",
 								},
-								brake_lights_on = { 
+								brake_lights_on = {
 									interpolation = "NEAREST",
-									params = { 
+									params = {
 										id = "::/vehicle/shared/ani/brake_lights_on.ani",
 									},
 									type = "FILE_REF",
@@ -387,18 +387,18 @@ return {
 							name = "universal_brakelights",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.82215023040771484375, 0, 1.1181800365447998046875, 1, },
 						},
-						{ 
-							animations = { 
-								blink_lights_left_off = { 
+						{
+							animations = {
+								blink_lights_left_off = {
 									interpolation = "NEAREST",
-									params = { 
+									params = {
 										id = "::/vehicle/shared/ani/blink_lights_left_off.ani",
 									},
 									type = "FILE_REF",
 								},
-								blink_lights_left_on = { 
+								blink_lights_left_on = {
 									interpolation = "NEAREST",
-									params = { 
+									params = {
 										id = "::/vehicle/shared/ani/blink_lights_left_on.ani",
 									},
 									type = "FILE_REF",
@@ -409,18 +409,18 @@ return {
 							name = "indicator_back_left",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.82215023040771484375, 0, 1.1181800365447998046875, 1, },
 						},
-						{ 
-							animations = { 
-								blink_lights_right_off = { 
+						{
+							animations = {
+								blink_lights_right_off = {
 									interpolation = "NEAREST",
-									params = { 
+									params = {
 										id = "::/vehicle/shared/ani/blink_lights_right_off.ani",
 									},
 									type = "FILE_REF",
 								},
-								blink_lights_right_on = { 
+								blink_lights_right_on = {
 									interpolation = "NEAREST",
-									params = { 
+									params = {
 										id = "::/vehicle/shared/ani/blink_lights_right_on.ani",
 									},
 									type = "FILE_REF",
@@ -438,50 +438,50 @@ return {
 				visibleFrom = 150,
 				visibleTo = 400,
 			},
-			{ 
-				node = { 
+			{
+				node = {
 					children = {
-						{ 
+						{
 							materials = { "mat/rumpf_1.mtl", },
 							mesh = "msh/13_rhs/rumpf_lod2.msh",
 							name = "body",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 						},
-						{ 
+						{
 							materials = { "mat/rumpf_1.mtl", },
 							mesh = "msh/shared/rad_lod2.msh",
 							name = "wheel_left",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.65550708770751953125, 1.12000000476837158203125, 0.551119029521942138671875, 1, },
 						},
-						{ 
+						{
 							materials = { "mat/rumpf_1.mtl", },
 							mesh = "msh/shared/rad_lod2.msh",
 							name = "wheel_right",
 							transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 2.65550708770751953125, -1.12000000476837158203125, 0.551119029521942138671875, 1, },
 						},
-						{ 
+						{
 							materials = { "mat/rumpf_1.mtl", },
 							mesh = "msh/shared/achse_lod2.msh",
 							name = "axis",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.6936931610107421875, 0, 0.551119029521942138671875, 1, },
 						},
-						{ 
+						{
 							materials = { "mat/innen_1.mtl", },
 							mesh = "msh/13_rhs/innen_lod2.msh",
 							name = "interior",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 						},
-						{ 
-							animations = { 
-								close_all_doors = { 
+						{
+							animations = {
+								close_all_doors = {
 									forward = false,
-									params = { 
+									params = {
 										id = "ani/doors/door_single.ani",
 									},
 									type = "FILE_REF",
 								},
-								open_all_doors = { 
-									params = { 
+								open_all_doors = {
+									params = {
 										id = "ani/doors/door_single.ani",
 									},
 									type = "FILE_REF",
@@ -492,17 +492,17 @@ return {
 							name = "door_back",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.650420010089874267578125, -1.2054932117462158203125, 0.37653648853302001953125, 1, },
 						},
-						{ 
-							animations = { 
-								close_all_doors = { 
+						{
+							animations = {
+								close_all_doors = {
 									forward = false,
-									params = { 
+									params = {
 										id = "ani/doors/door_single.ani",
 									},
 									type = "FILE_REF",
 								},
-								open_all_doors = { 
-									params = { 
+								open_all_doors = {
+									params = {
 										id = "ani/doors/door_single.ani",
 									},
 									type = "FILE_REF",
@@ -513,7 +513,7 @@ return {
 							name = "door_front",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.344230175018310546875, -1.24212539196014404296875, 0.38203132152557373046875, 1, },
 						},
-						{ 
+						{
 							materials = { "mat/glas_13_rhs.mtl", },
 							mesh = "msh/13_rhs/fenster_lod2.msh",
 							name = "windows",
@@ -527,33 +527,33 @@ return {
 				visibleTo = 1400,
 			},
 		},
-		metadata = { 
-			availability = { 
+		metadata = {
+			availability = {
 				yearFrom = 1982,
 				yearTo = 1992,
 			},
-			cost = { 
+			cost = {
 				price = -1,
 			},
-			description = { 
+			description = {
 				description = _("MB_O303_Facelift_desc"),
 				name = _("MB_O303_1_name"),
 			},
-			emissions = { 
-				noise = { 
+			emissions = {
+				noise = {
 					idle = -1,
 					power = -1,
 					speed = -1,
 				},
-				pollution = { 
+				pollution = {
 					idle = -1,
 					power = -1,
 					speed = -1,
 				},
 			},
-			landVehicle = { 
+			landVehicle = {
 				engines = {
-					{ 
+					{
 						power = 213,
 						tractiveEffort = 28,
 						type = "DIESEL",
@@ -563,21 +563,145 @@ return {
 				weightEmpty = 10000,
 				weightMaxPayload = 0,
 			},
-			maintenance = { 
+		   extent = {
+			    bbMax = { 4.659999847412109375, 1.35000002384185791015625, 3.349999904632568359375, },
+			    bbMin = { -5.889999866485595703125, -1.35000002384185791015625, 0, },
+		    },
+			lightSourceList = {
+				lights = {
+					{
+						angleMax = 30,
+						angleMin = 1,
+						color = { 1, 0.9261314868927001953125, 0.5803921222686767578125, },
+						invertMask = true,
+						lightId = "",
+						mask = 0,
+						meshId = "universal_headlights",
+						mode = "LIGHT",
+						radius = 7,
+						strength = 3,
+						transf = { 0.985, 0, -0.173, 0, 0, 1, 0, 0, 0.173, 0, 0.985, 0, 0.1, -1.05, -0.45, 1, },
+						type = "SPOT",
+						visibleFrom = -1,
+						visibleTo = -1,
+					},
+					{
+						angleMax = 30,
+						angleMin = 1,
+						color = { 1, 0.9261314868927001953125, 0.5803921222686767578125, },
+						invertMask = true,
+						lightId = "",
+						mask = 0,
+						meshId = "universal_headlights",
+						mode = "LIGHT",
+						radius = 7,
+						strength = 3,
+						transf = { 0.985, 0, -0.173, 0, 0, 1, 0, 0, 0.173, 0, 0.985, 0, 0.1, 1.05, -0.45, 1, },
+						type = "SPOT",
+						visibleFrom = -1,
+						visibleTo = -1,
+					},
+					{
+						angleMax = 30,
+						angleMin = 1,
+						color = { 0.427450954914093017578125, 0.02849672921001911163330078125, 0.02849672921001911163330078125, },
+						invertMask = true,
+						lightId = "",
+						mask = 0,
+						meshId = "universal_taillights",
+						mode = "LIGHT",
+						radius = 3,
+						strength = 3,
+						transf = { -0.985, 0, -0.173, 0, 0, -1, 0, 0, 0.173, 0, 0.985, 0, 0, -1.1, -0.2, 1, },
+						type = "SPOT",
+						visibleFrom = -1,
+						visibleTo = -1,
+					},
+					{
+						angleMax = 30,
+						angleMin = 1,
+						color = { 0.427450954914093017578125, 0.02849672921001911163330078125, 0.02849672921001911163330078125, },
+						invertMask = true,
+						lightId = "",
+						mask = 0,
+						meshId = "universal_taillights",
+						mode = "LIGHT",
+						radius = 3,
+						strength = 3,
+						transf = { -0.985, 0, -0.173, 0, 0, -1, 0, 0, 0.173, 0, 0.985, 0, 0, 1.1, -0.2, 1, },
+						type = "SPOT",
+						visibleFrom = -1,
+						visibleTo = -1,
+					},
+					{
+						angleMax = 30,
+						angleMin = 1,
+						color = { 0.6, 0.05, 0.05, },
+						invertMask = true,
+						lightId = "",
+						mask = 0,
+						meshId = "universal_brakelights",
+						mode = "LIGHT",
+						radius = 3,
+						strength = 5,
+						transf = { -0.985, 0, -0.173, 0, 0, -1, 0, 0, 0.173, 0, 0.985, 0, 0, -0.95, -0.2, 1, },
+						type = "SPOT",
+						visibleFrom = -1,
+						visibleTo = -1,
+					},
+					{
+						angleMax = 30,
+						angleMin = 1,
+						color = { 0.6, 0.05, 0.05, },
+						invertMask = true,
+						lightId = "",
+						mask = 0,
+						meshId = "universal_brakelights",
+						mode = "LIGHT",
+						radius = 3,
+						strength = 5,
+						transf = { -0.985, 0, -0.173, 0, 0, -1, 0, 0, 0.173, 0, 0.985, 0, 0, 0.95, -0.2, 1, },
+						type = "SPOT",
+						visibleFrom = -1,
+						visibleTo = -1,
+					},
+					{
+						angleMax = 89,
+						angleMin = 9,
+						color = { 1, 0.9261314868927001953125, 0.5803921222686767578125, },
+						fadeOutStart = 600,
+						fromTime = -1,
+						invertMask = false,
+						length = 5,
+						lightId = "",
+						mask = 32,
+						meshId = "interior",
+						mode = "LIGHT",
+						radius = 3,
+						strength = 3,
+						toTime = -1,
+						transf = { 1, 0, 0, 0, 0, 0, -1, 0, 0, 1, 0, 0, -1, 0, 3.10, 1, },
+						type = "CYLINDRICAL",
+						visibleFrom = -1,
+						visibleTo = 800,
+					},
+				},
+			},
+			maintenance = {
 				lifespan = 21915,
 				runningCosts = -1,
 			},
-			particleSystem = { 
+			particleSystem = {
 				emitters = {
-					{ 
-						alphaOverLifeTime = { 
+					{
+						alphaOverLifeTime = {
 							curve = {
-								{ 
+								{
 									easing = "Linear",
 									time = 0,
 									value = 0.75,
 								},
-								{ 
+								{
 									easing = "Linear",
 									time = 1,
 									value = 0,
@@ -585,65 +709,65 @@ return {
 							},
 						},
 						child = "body",
-						colorOverLifeTime = { 
+						colorOverLifeTime = {
 							curve = {
-								{ 
+								{
 									easing = "Linear",
 									time = 1,
 									value = { 0.129411756992340087890625, 0.129411756992340087890625, 0.129411756992340087890625, },
 								},
 							},
 						},
-						frequency = { 
+						frequency = {
 							value = 20,
 						},
-						lifeTime = { 
-							randomMinMax = { 
+						lifeTime = {
+							randomMinMax = {
 								max = 0.5,
 								min = 0.25,
 							},
 						},
 						particleId = "",
 						position = { -5.86999988555908203125, -0.930000007152557373046875, 0.699999988079071044921875, },
-						shape = { 
-							point = { 
+						shape = {
+							point = {
 								maxDir = 0.800000011920928955078125,
 							},
 						},
-						sizeOverLifeTime = { 
+						sizeOverLifeTime = {
 							curve = {
-								{ 
+								{
 									easing = "Linear",
 									time = 0,
-									value = { 
+									value = {
 										value = 0.100000001490116119384765625,
 									},
 								},
-								{ 
+								{
 									easing = "EaseOutSqrt",
 									time = 4,
-									value = { 
+									value = {
 										value = 0.89999997615814208984375,
 									},
 								},
 							},
 						},
-						velocity = { 
+						velocity = {
 							value = { -0.5, 0, 0, },
 						},
-						velocityByDirection = { 
+						velocityByDirection = {
 							value = 0,
 						},
 					},
-					{ 
-						alphaOverLifeTime = { 
+					{
+						alphaOverLifeTime = {
 							curve = {
-								{ 
+								{
 									easing = "Linear",
 									time = 0,
 									value = 0.75,
 								},
-								{ 
+								{
 									easing = "Linear",
 									time = 1,
 									value = 0,
@@ -651,313 +775,313 @@ return {
 							},
 						},
 						child = "body",
-						colorOverLifeTime = { 
+						colorOverLifeTime = {
 							curve = {
-								{ 
+								{
 									easing = "Linear",
 									time = 1,
 									value = { 0.129411756992340087890625, 0.129411756992340087890625, 0.129411756992340087890625, },
 								},
 							},
 						},
-						frequency = { 
+						frequency = {
 							value = 20,
 						},
-						lifeTime = { 
-							randomMinMax = { 
+						lifeTime = {
+							randomMinMax = {
 								max = 0.5,
 								min = 0.25,
 							},
 						},
 						particleId = "",
 						position = { -5.86999988555908203125, -0.86000001430511474609375, 0.699999988079071044921875, },
-						shape = { 
-							point = { 
+						shape = {
+							point = {
 								maxDir = 0.800000011920928955078125,
 							},
 						},
-						sizeOverLifeTime = { 
+						sizeOverLifeTime = {
 							curve = {
-								{ 
+								{
 									easing = "Linear",
 									time = 0,
-									value = { 
+									value = {
 										value = 0.100000001490116119384765625,
 									},
 								},
-								{ 
+								{
 									easing = "EaseOutSqrt",
 									time = 4,
-									value = { 
+									value = {
 										value = 0.89999997615814208984375,
 									},
 								},
 							},
 						},
-						velocity = { 
+						velocity = {
 							value = { -0.5, 0, 0, },
 						},
-						velocityByDirection = { 
+						velocityByDirection = {
 							value = 0,
 						},
 					},
 				},
 			},
-			roadVehicle = { 
-				config = { 
+			roadVehicle = {
+				config = {
 					axles = { "axis", },
 					fakeBogies = { },
 					steeringParts = { },
-					wheels = { "rad", },
+					wheels = { "wheel_left", "wheel_right", },
 				},
 			},
-			seatProvider = { 
-				crewModels = { "/characters/era_b_driver_road.mdl", },
+			seatProvider = {
+				crewModels = { "::/characters/era_b_driver_road/era_b_driver_road.mdl", },
 				drivingLicense = "BUS",
 				seats = {
-					{ 
+					{
 						animation = "driving_upright",
 						crew = true,
 						group = "RootNode",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.650000095367431640625, 0.75, 1.14999997615814208984375, 1, },
 					},
-					{ 
+					{
 						animation = "sitting",
 						group = "RootNode",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.75, 0.949999988079071044921875, 1.25, 1, },
 					},
-					{ 
+					{
 						animation = "sitting",
 						group = "RootNode",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.75, 0.449999988079071044921875, 1.25, 1, },
 					},
-					{ 
+					{
 						animation = "sitting",
 						group = "RootNode",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.75, -0.449999988079071044921875, 1.25, 1, },
 					},
-					{ 
+					{
 						animation = "sitting",
 						group = "RootNode",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.75, -0.949999988079071044921875, 1.25, 1, },
 					},
-					{ 
+					{
 						animation = "sitting",
 						group = "RootNode",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.9500000476837158203125, 0.949999988079071044921875, 1.25, 1, },
 					},
-					{ 
+					{
 						animation = "sitting",
 						group = "RootNode",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.9500000476837158203125, 0.449999988079071044921875, 1.25, 1, },
 					},
-					{ 
+					{
 						animation = "sitting",
 						group = "RootNode",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.9500000476837158203125, -0.449999988079071044921875, 1.25, 1, },
 					},
-					{ 
+					{
 						animation = "sitting",
 						group = "RootNode",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.9500000476837158203125, -0.949999988079071044921875, 1.25, 1, },
 					},
-					{ 
+					{
 						animation = "sitting",
 						group = "RootNode",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2999999523162841796875, 0.949999988079071044921875, 1.25, 1, },
 					},
-					{ 
+					{
 						animation = "sitting",
 						group = "RootNode",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2999999523162841796875, 0.449999988079071044921875, 1.25, 1, },
 					},
-					{ 
+					{
 						animation = "sitting",
 						group = "RootNode",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2999999523162841796875, -0.449999988079071044921875, 1.25, 1, },
 					},
-					{ 
+					{
 						animation = "sitting",
 						group = "RootNode",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.2999999523162841796875, -0.949999988079071044921875, 1.25, 1, },
 					},
-					{ 
+					{
 						animation = "sitting",
 						group = "RootNode",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.550000011920928955078125, 0.949999988079071044921875, 1.25, 1, },
 					},
-					{ 
+					{
 						animation = "sitting",
 						group = "RootNode",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.550000011920928955078125, 0.449999988079071044921875, 1.25, 1, },
 					},
-					{ 
+					{
 						animation = "sitting",
 						group = "RootNode",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.550000011920928955078125, -0.449999988079071044921875, 1.25, 1, },
 					},
-					{ 
+					{
 						animation = "sitting",
 						group = "RootNode",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.550000011920928955078125, -0.949999988079071044921875, 1.25, 1, },
 					},
-					{ 
+					{
 						animation = "sitting",
 						group = "RootNode",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.25, 0.949999988079071044921875, 1.25, 1, },
 					},
-					{ 
+					{
 						animation = "sitting",
 						group = "RootNode",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.25, 0.449999988079071044921875, 1.25, 1, },
 					},
-					{ 
+					{
 						animation = "sitting",
 						group = "RootNode",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.25, -0.449999988079071044921875, 1.25, 1, },
 					},
-					{ 
+					{
 						animation = "sitting",
 						group = "RootNode",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.25, -0.949999988079071044921875, 1.25, 1, },
 					},
-					{ 
+					{
 						animation = "sitting",
 						group = "RootNode",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.10000002384185791015625, 0.949999988079071044921875, 1.25, 1, },
 					},
-					{ 
+					{
 						animation = "sitting",
 						group = "RootNode",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.10000002384185791015625, 0.449999988079071044921875, 1.25, 1, },
 					},
-					{ 
+					{
 						animation = "sitting",
 						group = "RootNode",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2, 0.949999988079071044921875, 1.25, 1, },
 					},
-					{ 
+					{
 						animation = "sitting",
 						group = "RootNode",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2, 0.449999988079071044921875, 1.25, 1, },
 					},
-					{ 
+					{
 						animation = "sitting",
 						group = "RootNode",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2, -0.449999988079071044921875, 1.25, 1, },
 					},
-					{ 
+					{
 						animation = "sitting",
 						group = "RootNode",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2, -0.949999988079071044921875, 1.25, 1, },
 					},
-					{ 
+					{
 						animation = "sitting",
 						group = "RootNode",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.75, 0.949999988079071044921875, 1.25, 1, },
 					},
-					{ 
+					{
 						animation = "sitting",
 						group = "RootNode",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.75, 0.449999988079071044921875, 1.25, 1, },
 					},
-					{ 
+					{
 						animation = "sitting",
 						group = "RootNode",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.75, -0.449999988079071044921875, 1.25, 1, },
 					},
-					{ 
+					{
 						animation = "sitting",
 						group = "RootNode",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.75, -0.949999988079071044921875, 1.25, 1, },
 					},
-					{ 
+					{
 						animation = "sitting",
 						group = "RootNode",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.5499999523162841796875, 0.949999988079071044921875, 1.25, 1, },
 					},
-					{ 
+					{
 						animation = "sitting",
 						group = "RootNode",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.5499999523162841796875, 0.449999988079071044921875, 1.25, 1, },
 					},
-					{ 
+					{
 						animation = "sitting",
 						group = "RootNode",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.5499999523162841796875, -0.449999988079071044921875, 1.25, 1, },
 					},
-					{ 
+					{
 						animation = "sitting",
 						group = "RootNode",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.5499999523162841796875, -0.949999988079071044921875, 1.25, 1, },
 					},
-					{ 
+					{
 						animation = "sitting",
 						group = "RootNode",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.30000019073486328125, 0.949999988079071044921875, 1.25, 1, },
 					},
-					{ 
+					{
 						animation = "sitting",
 						group = "RootNode",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.30000019073486328125, 0.449999988079071044921875, 1.25, 1, },
 					},
-					{ 
+					{
 						animation = "sitting",
 						group = "RootNode",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.30000019073486328125, -0.449999988079071044921875, 1.25, 1, },
 					},
-					{ 
+					{
 						animation = "sitting",
 						group = "RootNode",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.30000019073486328125, -0.949999988079071044921875, 1.25, 1, },
 					},
-					{ 
+					{
 						animation = "sitting",
 						group = "RootNode",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.25, 0.949999988079071044921875, 1.39999997615814208984375, 1, },
 					},
-					{ 
+					{
 						animation = "sitting",
 						group = "RootNode",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.25, 0.449999988079071044921875, 1.39999997615814208984375, 1, },
 					},
-					{ 
+					{
 						animation = "sitting",
 						group = "RootNode",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.25, 0, 1.39999997615814208984375, 1, },
 					},
-					{ 
+					{
 						animation = "sitting",
 						group = "RootNode",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.25, -0.449999988079071044921875, 1.39999997615814208984375, 1, },
 					},
-					{ 
+					{
 						animation = "sitting",
 						group = "RootNode",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.25, -0.949999988079071044921875, 1.39999997615814208984375, 1, },
 					},
 				},
 			},
-			soundConfig = { 
-				soundSet = { 
+			soundConfig = {
+				soundSet = {
 					name = "::/vehicle/bus/shared/sound/bus_modern.snd",
 				},
 			},
-			transformatorConfig = { 
+			transformatorConfig = {
 				skipFromLod = 1,
-				transformator = { 
+				transformator = {
 					name = "::/vehicle/shared/default_road.trf",
 				},
 			},
-			transportVehicle = { 
+			transportVehicle = {
 				carrier = "ROAD",
 				compartments = {
-					{ 
+					{
 						loadConfigs = {
-							{ 
-								cargoEntry = { 
+							{
+								cargoEntry = {
 									capacity = 48,
-									cargoTypeSet = { 
+									cargoTypeSet = {
 										cargoClassesExcluded = { },
 										cargoClassesIncluded = { },
 										cargoTypesExcluded = { },
