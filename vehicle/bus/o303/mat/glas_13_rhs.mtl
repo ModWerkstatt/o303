@@ -23,7 +23,6 @@ return {
 				fragmentSamplers = {
 					albedoOpacityTex = {
 						fileName = "tex/glas_13_rhs_albedo_opacity.dds",
-						scaleDownAllowed = false,
 						type = "TWOD",
 					},
 				},
@@ -32,7 +31,6 @@ return {
 				fragmentSamplers = {
 					metalGlossAoTex = {
 						fileName = "tex/glas_13_rhs_metal_gloss_ao.dds",
-						scaleDownAllowed = false,
 						type = "TWOD",
 					},
 				},
