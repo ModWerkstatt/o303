@@ -16,25 +16,25 @@ return {
 				node = { 
 					children = {
 						{ 
-							materials = { "mat/rumpf_2_alt.mtl", },
+							materials = { "mat/rumpf_1_alt.mtl", },
 							mesh = "msh/13_rhs/rumpf_alt_lod0.msh",
 							name = "body",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1, 0, 0, 1, },
 						},
 						{ 
-							materials = { "mat/rumpf_2_alt.mtl", },
-							mesh = "msh/shared/rad_radkappe_lod0.msh",
+							materials = { "mat/rumpf_1_alt.mtl", },
+							mesh = "msh/shared/rad_lod0.msh",
 							name = "wheel_left",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.65550708770751953125, 1.12000000476837158203125, 0.551119029521942138671875, 1, },
 						},
 						{ 
-							materials = { "mat/rumpf_2_alt.mtl", },
-							mesh = "msh/shared/rad_radkappe_lod0.msh",
+							materials = { "mat/rumpf_1_alt.mtl", },
+							mesh = "msh/shared/rad_lod0.msh",
 							name = "wheel_right",
 							transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 2.65550708770751953125, -1.12000000476837158203125, 0.551119029521942138671875, 1, },
 						},
 						{ 
-							materials = { "mat/rumpf_2_alt.mtl", },
+							materials = { "mat/rumpf_1_alt.mtl", },
 							mesh = "msh/shared/achse_radkappe_lod0.msh",
 							name = "axis",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.6936931610107421875, 0, 0.551119029521942138671875, 1, },
@@ -61,7 +61,7 @@ return {
 									type = "FILE_REF",
 								},
 							},
-							materials = { "mat/rumpf_2_alt.mtl", "mat/glas_13_rhs.mtl", },
+							materials = { "mat/rumpf_1_alt.mtl", "mat/glas_13_rhs.mtl", },
 							mesh = "msh/shared/tuer_hinten_einzel_lod0.msh",
 							name = "door_back",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.650420010089874267578125, -1.2054932117462158203125, 0.37653648853302001953125, 1, },
@@ -71,42 +71,21 @@ return {
 								close_all_doors = { 
 									forward = false,
 									params = { 
-										id = "ani/doors/door_l.ani",
+										id = "ani/doors/door_single.ani",
 									},
 									type = "FILE_REF",
 								},
 								open_all_doors = { 
 									params = { 
-										id = "ani/doors/door_l.ani",
+										id = "ani/doors/door_single.ani",
 									},
 									type = "FILE_REF",
 								},
 							},
-							materials = { "mat/rumpf_2_alt.mtl", "mat/glas_13_rhs.mtl", },
-							mesh = "msh/shared/tuer_doppel_l_lod0.msh",
+							materials = { "mat/rumpf_1_alt.mtl", "mat/glas_13_rhs.mtl", },
+							mesh = "msh/shared/tuer_vorne_lod0.msh",
 							name = "door_front",
-							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.34418010711669921875, -1.308599948883056640625, 1.72819995880126953125, 1, },
-						},
-						{ 
-							animations = { 
-								close_all_doors = { 
-									forward = false,
-									params = { 
-										id = "ani/doors/door_r.ani",
-									},
-									type = "FILE_REF",
-								},
-								open_all_doors = { 
-									params = { 
-										id = "ani/doors/door_r.ani",
-									},
-									type = "FILE_REF",
-								},
-							},
-							materials = { "mat/rumpf_2_alt.mtl", "mat/glas_13_rhs.mtl", },
-							mesh = "msh/shared/tuer_doppel_r_lod0.msh",
-							name = "door_front",
-							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.176599979400634765625, -1.308599948883056640625, 1.72819995880126953125, 1, },
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.344230175018310546875, -1.24212539196014404296875, 0.38203132152557373046875, 1, },
 						},
 						{ 
 							materials = { "mat/glas_13_rhs.mtl", },
@@ -118,7 +97,13 @@ return {
 							materials = { "mat/glas_licht.mtl", },
 							mesh = "msh/shared/glas_scheinwerfer_alt_lod0.msh",
 							name = "glass_headlights",
-							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.019999980926513671875, 0, 0, 1, },
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.019999980926513671875, 0, 0, 1, },
+						},
+						{ 
+							materials = { "::/vehicle/bus/emissive/bus_add_lights.mtl", },
+							mesh = "msh/licht/licht_scheinwerfer_lod0.msh",
+							name = "universal_headlights",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.57, 0, 1.4837100505828857421875, 1, },
 						},
 						{ 
 							animations = { 
@@ -137,9 +122,9 @@ return {
 									type = "FILE_REF",
 								},
 							},
-							materials = { "::/vehicle/bus/emissive/bus_add_lights.mtl", },
-							mesh = "msh/licht/licht_scheinwerfer_lod0.msh",
-							name = "universal_headlights",
+							materials = { "::/vehicle/bus/emissive/bus_all_lights.mtl", },
+							mesh = "msh/licht/licht_blinker_vorne_links_lod0.msh",
+							name = "indicator_front_left",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.530000209808349609375, 0, 1.4837100505828857421875, 1, },
 						},
 						{ 
@@ -160,15 +145,15 @@ return {
 								},
 							},
 							materials = { "::/vehicle/bus/emissive/bus_all_lights.mtl", },
-							mesh = "msh/licht/licht_blinker_vorne_links_lod0.msh",
-							name = "indicator_front_left",
-							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.530000209808349609375, 0, 1.4837100505828857421875, 1, },
-						},
-						{ 
-							materials = { "::/vehicle/bus/emissive/bus_all_lights.mtl", },
 							mesh = "msh/licht/licht_blinker_vorne_rechts_lod0.msh",
 							name = "indicator_front_right",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.530000209808349609375, 0, 1.4837100505828857421875, 1, },
+						},
+						{ 
+							materials = { "::/vehicle/bus/emissive/bus_add_lights.mtl", },
+							mesh = "msh/licht/licht_rueckleuchten_lod0.msh",
+							name = "universal_taillights",
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.82215023040771484375, 0, 1.1181800365447998046875, 1, },
 						},
 						{ 
 							animations = { 
@@ -187,9 +172,9 @@ return {
 									type = "FILE_REF",
 								},
 							},
-							materials = { "::/vehicle/bus/emissive/bus_add_lights.mtl", },
-							mesh = "msh/licht/licht_rueckleuchten_lod0.msh",
-							name = "universal_taillights",
+							materials = { "::/vehicle/bus/emissive/bus_brake_lights.mtl", },
+							mesh = "msh/licht/licht_bremslicht_lod0.msh",
+							name = "universal_brakelights",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.82215023040771484375, 0, 1.1181800365447998046875, 1, },
 						},
 						{ 
@@ -209,9 +194,9 @@ return {
 									type = "FILE_REF",
 								},
 							},
-							materials = { "::/vehicle/bus/emissive/bus_brake_lights.mtl", },
-							mesh = "msh/licht/licht_bremslicht_lod0.msh",
-							name = "universal_brakelights",
+							materials = { "::/vehicle/bus/emissive/bus_all_lights.mtl", },
+							mesh = "msh/licht/licht_blinker_hinten_links_lod0.msh",
+							name = "indicator_back_left",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.82215023040771484375, 0, 1.1181800365447998046875, 1, },
 						},
 						{ 
@@ -232,12 +217,6 @@ return {
 								},
 							},
 							materials = { "::/vehicle/bus/emissive/bus_all_lights.mtl", },
-							mesh = "msh/licht/licht_blinker_hinten_links_lod0.msh",
-							name = "indicator_back_left",
-							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.82215023040771484375, 0, 1.1181800365447998046875, 1, },
-						},
-						{ 
-							materials = { "::/vehicle/bus/emissive/bus_all_lights.mtl", },
 							mesh = "msh/licht/licht_blinker_hinten_rechts_lod0.msh",
 							name = "indicator_back_right",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.82215023040771484375, 0, 1.1181800365447998046875, 1, },
@@ -253,25 +232,25 @@ return {
 				node = { 
 					children = {
 						{ 
-							materials = { "mat/rumpf_2_alt.mtl", },
+							materials = { "mat/rumpf_1_alt.mtl", },
 							mesh = "msh/13_rhs/rumpf_lod1.msh",
 							name = "body",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 						},
 						{ 
-							materials = { "mat/rumpf_2_alt.mtl", },
+							materials = { "mat/rumpf_1_alt.mtl", },
 							mesh = "msh/shared/rad_lod1.msh",
 							name = "wheel_left",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.65550708770751953125, 1.12000000476837158203125, 0.551119029521942138671875, 1, },
 						},
 						{ 
-							materials = { "mat/rumpf_2_alt.mtl", },
+							materials = { "mat/rumpf_1_alt.mtl", },
 							mesh = "msh/shared/rad_lod1.msh",
 							name = "wheel_right",
 							transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 2.65550708770751953125, -1.12000000476837158203125, 0.551119029521942138671875, 1, },
 						},
 						{ 
-							materials = { "mat/rumpf_2_alt.mtl", },
+							materials = { "mat/rumpf_1_alt.mtl", },
 							mesh = "msh/shared/achse_lod1.msh",
 							name = "axis",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.6936931610107421875, 0, 0.551119029521942138671875, 1, },
@@ -298,7 +277,7 @@ return {
 									type = "FILE_REF",
 								},
 							},
-							materials = { "mat/rumpf_2_alt.mtl", "mat/glas_13_rhs.mtl", },
+							materials = { "mat/rumpf_1_alt.mtl", "mat/glas_13_rhs.mtl", },
 							mesh = "msh/shared/tuer_hinten_einzel_lod1.msh",
 							name = "door_back",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.650420010089874267578125, -1.2054932117462158203125, 0.37653648853302001953125, 1, },
@@ -319,7 +298,7 @@ return {
 									type = "FILE_REF",
 								},
 							},
-							materials = { "mat/rumpf_2_alt.mtl", "mat/glas_13_rhs.mtl", },
+							materials = { "mat/rumpf_1_alt.mtl", "mat/glas_13_rhs.mtl", },
 							mesh = "msh/shared/tuer_vorne_lod1.msh",
 							name = "door_front",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.344230175018310546875, -1.24212539196014404296875, 0.38203132152557373046875, 1, },
@@ -327,7 +306,7 @@ return {
 						{ 
 							materials = { "mat/glas_13_rhs.mtl", },
 							mesh = "msh/13_rhs/fenster_lod1.msh",
-							name = "fenster",
+							name = "windows",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 						},
 						{ 
@@ -463,25 +442,25 @@ return {
 				node = { 
 					children = {
 						{ 
-							materials = { "mat/rumpf_2_alt.mtl", },
+							materials = { "mat/rumpf_1_alt.mtl", },
 							mesh = "msh/13_rhs/rumpf_lod2.msh",
 							name = "body",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 						},
 						{ 
-							materials = { "mat/rumpf_2_alt.mtl", },
+							materials = { "mat/rumpf_1_alt.mtl", },
 							mesh = "msh/shared/rad_lod2.msh",
 							name = "wheel_left",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.65550708770751953125, 1.12000000476837158203125, 0.551119029521942138671875, 1, },
 						},
 						{ 
-							materials = { "mat/rumpf_2_alt.mtl", },
+							materials = { "mat/rumpf_1_alt.mtl", },
 							mesh = "msh/shared/rad_lod2.msh",
 							name = "wheel_right",
 							transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 2.65550708770751953125, -1.12000000476837158203125, 0.551119029521942138671875, 1, },
 						},
 						{ 
-							materials = { "mat/rumpf_2_alt.mtl", },
+							materials = { "mat/rumpf_1_alt.mtl", },
 							mesh = "msh/shared/achse_lod2.msh",
 							name = "axis",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.6936931610107421875, 0, 0.551119029521942138671875, 1, },
@@ -508,7 +487,7 @@ return {
 									type = "FILE_REF",
 								},
 							},
-							materials = { "mat/rumpf_2_alt.mtl", "mat/glas_13_rhs.mtl", },
+							materials = { "mat/rumpf_1_alt.mtl", "mat/glas_13_rhs.mtl", },
 							mesh = "msh/shared/tuer_hinten_einzel_lod2.msh",
 							name = "door_back",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.650420010089874267578125, -1.2054932117462158203125, 0.37653648853302001953125, 1, },
@@ -529,7 +508,7 @@ return {
 									type = "FILE_REF",
 								},
 							},
-							materials = { "mat/rumpf_2_alt.mtl", "mat/glas_13_rhs.mtl", },
+							materials = { "mat/rumpf_1_alt.mtl", "mat/glas_13_rhs.mtl", },
 							mesh = "msh/shared/tuer_vorne_lod2.msh",
 							name = "door_front",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.344230175018310546875, -1.24212539196014404296875, 0.38203132152557373046875, 1, },
@@ -558,7 +537,7 @@ return {
 			},
 			description = { 
 				description = _("MB_O303_desc"),
-				name = _("MB_O303_2_alt_name"),
+				name = _("MB_O303_1_alt_name"),
 			},
 			emissions = { 
 				noise = { 
@@ -1116,10 +1095,11 @@ return {
 						},
 					},
 				},
-				engineTags = { "BUS", },
+				engineTransportModes = { "BUS", },
 				groupFileName = "menu_mb_o303.mdl",
 				loadSpeed = 3,
-				tags = { "BUS", },
+				transportModes = {  "BUS", },
+				filterTags = { "default", },
 			},
 		},
 		version = 2,

@@ -16,33 +16,33 @@ return {
 				node = { 
 					children = {
 						{ 
-							materials = { "mat/rumpf_8.mtl", },
-							mesh = "msh/15_rhs/rumpf_lod0.msh",
+							materials = { "mat/rumpf_4.mtl", },
+							mesh = "msh/15_rhs/rumpf_mitteltuer_lod0.msh",
 							name = "body",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 						},
 						{ 
-							materials = { "mat/rumpf_8.mtl", },
+							materials = { "mat/rumpf_4.mtl", },
 							mesh = "msh/shared/rad_radkappe_lod0.msh",
 							name = "rad",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.11999988555908203125, 1.12000000476837158203125, 0.551119029521942138671875, 1, },
 						},
 						{ 
-							materials = { "mat/rumpf_8.mtl", },
+							materials = { "mat/rumpf_4.mtl", },
 							mesh = "msh/shared/rad_radkappe_lod0.msh",
 							name = "rad",
 							transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 2.11999988555908203125, -1.12000000476837158203125, 0.551119029521942138671875, 1, },
 						},
 						{ 
-							materials = { "mat/rumpf_8.mtl", },
+							materials = { "mat/rumpf_4.mtl", },
 							mesh = "msh/shared/achse_radkappe_lod0.msh",
 							name = "axis",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.138040065765380859375, 0, 0.551119029521942138671875, 1, },
 						},
 						{ 
 							materials = { "mat/innen_2.mtl", },
-							mesh = "msh/15_rhs/innen_lod0.msh",
-							name = "fenster",
+							mesh = "msh/15_rhs/innen_mitteltuer_lod0.msh",
+							name = "interior",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 						},
 						{ 
@@ -61,10 +61,10 @@ return {
 									type = "FILE_REF",
 								},
 							},
-							materials = { "mat/rumpf_8.mtl", "mat/glas_13_rhs.mtl", },
+							materials = { "mat/rumpf_4.mtl", "mat/glas_13_rhs.mtl", },
 							mesh = "msh/shared/tuer_hinten_einzel_lod0.msh",
 							name = "door_back",
-							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.94291019439697265625, -1.2054932117462158203125, 0.37653648853302001953125, 1, },
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.0973498821258544921875, -1.2054932117462158203125, 0.37653648853302001953125, 1, },
 						},
 						{ 
 							animations = { 
@@ -82,14 +82,14 @@ return {
 									type = "FILE_REF",
 								},
 							},
-							materials = { "mat/rumpf_8.mtl", "mat/glas_13_rhs.mtl", },
+							materials = { "mat/rumpf_4.mtl", "mat/glas_13_rhs.mtl", },
 							mesh = "msh/shared/tuer_vorne_lod0.msh",
 							name = "door_front",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.344230175018310546875, -1.24212539196014404296875, 0.38203132152557373046875, 1, },
 						},
 						{ 
 							materials = { "mat/glas_13_rhs.mtl", },
-							mesh = "msh/15_rhs/fenster_lod0.msh",
+							mesh = "msh/15_rhs/fenster_mitteltuer_lod0.msh",
 							name = "fenster",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 						},
@@ -153,7 +153,7 @@ return {
 							materials = { "::/vehicle/bus/emissive/bus_add_lights.mtl", },
 							mesh = "msh/licht/licht_rueckleuchten_lod0.msh",
 							name = "universal_taillights",
-							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.306680202484130859375, 0, 1.1181800365447998046875, 1, },
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.2722148895263671875, 0, 1.1181800365447998046875, 1, },
 						},
 						{ 
 							animations = { 
@@ -175,7 +175,7 @@ return {
 							materials = { "::/vehicle/bus/emissive/bus_brake_lights.mtl", },
 							mesh = "msh/licht/licht_bremslicht_lod0.msh",
 							name = "universal_brakelights",
-							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.306680202484130859375, 0, 1.1181800365447998046875, 1, },
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.2722148895263671875, 0, 1.1181800365447998046875, 1, },
 						},
 						{ 
 							animations = { 
@@ -197,7 +197,7 @@ return {
 							materials = { "::/vehicle/bus/emissive/bus_all_lights.mtl", },
 							mesh = "msh/licht/licht_blinker_hinten_links_lod0.msh",
 							name = "indicator_back_left",
-							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.306680202484130859375, 0, 1.1181800365447998046875, 1, },
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.2722148895263671875, 0, 1.1181800365447998046875, 1, },
 						},
 						{ 
 							animations = { 
@@ -219,7 +219,7 @@ return {
 							materials = { "::/vehicle/bus/emissive/bus_all_lights.mtl", },
 							mesh = "msh/licht/licht_blinker_hinten_rechts_lod0.msh",
 							name = "indicator_back_right",
-							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.306680202484130859375, 0, 1.1181800365447998046875, 1, },
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.2722148895263671875, 0, 1.1181800365447998046875, 1, },
 						},
 					},
 					name = "RootNode",
@@ -232,32 +232,32 @@ return {
 				node = { 
 					children = {
 						{ 
-							materials = { "mat/rumpf_8.mtl", },
-							mesh = "msh/15_rhs/rumpf_lod1.msh",
+							materials = { "mat/rumpf_4.mtl", },
+							mesh = "msh/15_rhs/rumpf_mitteltuer_lod1.msh",
 							name = "body",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 						},
 						{ 
-							materials = { "mat/rumpf_8.mtl", },
+							materials = { "mat/rumpf_4.mtl", },
 							mesh = "msh/shared/rad_lod1.msh",
 							name = "rad",
-							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.11999988555908203125, 1.12000000476837158203125, 0.551119029521942138671875, 1, },
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.1207087039947509765625, 1.12000000476837158203125, 0.551119029521942138671875, 1, },
 						},
 						{ 
-							materials = { "mat/rumpf_8.mtl", },
+							materials = { "mat/rumpf_4.mtl", },
 							mesh = "msh/shared/rad_lod1.msh",
 							name = "rad",
-							transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 2.11999988555908203125, -1.12000000476837158203125, 0.551119029521942138671875, 1, },
+							transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 2.1207087039947509765625, -1.12000000476837158203125, 0.551119029521942138671875, 1, },
 						},
 						{ 
-							materials = { "mat/rumpf_8.mtl", },
+							materials = { "mat/rumpf_4.mtl", },
 							mesh = "msh/shared/achse_lod1.msh",
 							name = "axis",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.138040065765380859375, 0, 0.551119029521942138671875, 1, },
 						},
 						{ 
 							materials = { "mat/innen_2.mtl", },
-							mesh = "msh/15_rhs/innen_lod1.msh",
+							mesh = "msh/15_rhs/innen_mitteltuer_lod1.msh",
 							name = "fenster",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 						},
@@ -277,10 +277,10 @@ return {
 									type = "FILE_REF",
 								},
 							},
-							materials = { "mat/rumpf_8.mtl", "mat/glas_13_rhs.mtl", },
+							materials = { "mat/rumpf_4.mtl", "mat/glas_13_rhs.mtl", },
 							mesh = "msh/shared/tuer_hinten_einzel_lod1.msh",
 							name = "door_back",
-							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.94291019439697265625, -1.2054932117462158203125, 0.37653648853302001953125, 1, },
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.0973498821258544921875, -1.2054932117462158203125, 0.37653648853302001953125, 1, },
 						},
 						{ 
 							animations = { 
@@ -298,14 +298,14 @@ return {
 									type = "FILE_REF",
 								},
 							},
-							materials = { "mat/rumpf_8.mtl", "mat/glas_13_rhs.mtl", },
+							materials = { "mat/rumpf_4.mtl", "mat/glas_13_rhs.mtl", },
 							mesh = "msh/shared/tuer_vorne_lod1.msh",
 							name = "door_front",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.344230175018310546875, -1.24212539196014404296875, 0.38203132152557373046875, 1, },
 						},
 						{ 
 							materials = { "mat/glas_13_rhs.mtl", },
-							mesh = "msh/15_rhs/fenster_lod0.msh",
+							mesh = "msh/15_rhs/fenster_mitteltuer_lod0.msh",
 							name = "fenster",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 						},
@@ -363,7 +363,7 @@ return {
 							materials = { "::/vehicle/bus/emissive/bus_add_lights.mtl", },
 							mesh = "msh/licht/licht_rueckleuchten_lod0.msh",
 							name = "universal_taillights",
-							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.306680202484130859375, 0, 1.1181800365447998046875, 1, },
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.2722148895263671875, 0, 1.1181800365447998046875, 1, },
 						},
 						{ 
 							animations = { 
@@ -385,7 +385,7 @@ return {
 							materials = { "::/vehicle/bus/emissive/bus_brake_lights.mtl", },
 							mesh = "msh/licht/licht_bremslicht_lod0.msh",
 							name = "universal_brakelights",
-							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.306680202484130859375, 0, 1.1181800365447998046875, 1, },
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.2722148895263671875, 0, 1.1181800365447998046875, 1, },
 						},
 						{ 
 							animations = { 
@@ -407,7 +407,7 @@ return {
 							materials = { "::/vehicle/bus/emissive/bus_all_lights.mtl", },
 							mesh = "msh/licht/licht_blinker_hinten_links_lod0.msh",
 							name = "indicator_back_left",
-							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.306680202484130859375, 0, 1.1181800365447998046875, 1, },
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.2722148895263671875, 0, 1.1181800365447998046875, 1, },
 						},
 						{ 
 							animations = { 
@@ -429,7 +429,7 @@ return {
 							materials = { "::/vehicle/bus/emissive/bus_all_lights.mtl", },
 							mesh = "msh/licht/licht_blinker_hinten_rechts_lod0.msh",
 							name = "indicator_back_right",
-							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.306680202484130859375, 0, 1.1181800365447998046875, 1, },
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.2722148895263671875, 0, 1.1181800365447998046875, 1, },
 						},
 					},
 					name = "RootNode",
@@ -442,25 +442,25 @@ return {
 				node = { 
 					children = {
 						{ 
-							materials = { "mat/rumpf_8.mtl", },
-							mesh = "msh/15_rhs/rumpf_lod2.msh",
+							materials = { "mat/rumpf_4.mtl", },
+							mesh = "msh/15_rhs/rumpf_mitteltuer_lod2.msh",
 							name = "body",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 						},
 						{ 
-							materials = { "mat/rumpf_8.mtl", },
+							materials = { "mat/rumpf_4.mtl", },
 							mesh = "msh/shared/rad_lod2.msh",
 							name = "rad",
-							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.11999988555908203125, 1.12000000476837158203125, 0.551119029521942138671875, 1, },
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.1207087039947509765625, 1.12000000476837158203125, 0.551119029521942138671875, 1, },
 						},
 						{ 
-							materials = { "mat/rumpf_8.mtl", },
+							materials = { "mat/rumpf_4.mtl", },
 							mesh = "msh/shared/rad_lod2.msh",
 							name = "rad",
-							transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 2.11999988555908203125, -1.12000000476837158203125, 0.551119029521942138671875, 1, },
+							transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 2.1207087039947509765625, -1.12000000476837158203125, 0.551119029521942138671875, 1, },
 						},
 						{ 
-							materials = { "mat/rumpf_8.mtl", },
+							materials = { "mat/rumpf_4.mtl", },
 							mesh = "msh/shared/achse_lod2.msh",
 							name = "axis",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.138040065765380859375, 0, 0.551119029521942138671875, 1, },
@@ -487,10 +487,10 @@ return {
 									type = "FILE_REF",
 								},
 							},
-							materials = { "mat/rumpf_8.mtl", "mat/glas_13_rhs.mtl", },
+							materials = { "mat/rumpf_4.mtl", "mat/glas_13_rhs.mtl", },
 							mesh = "msh/shared/tuer_hinten_einzel_lod2.msh",
 							name = "door_back",
-							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.94291019439697265625, -1.2054932117462158203125, 0.37653648853302001953125, 1, },
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.0973498821258544921875, -1.2054932117462158203125, 0.37653648853302001953125, 1, },
 						},
 						{ 
 							animations = { 
@@ -508,7 +508,7 @@ return {
 									type = "FILE_REF",
 								},
 							},
-							materials = { "mat/rumpf_8.mtl", "mat/glas_13_rhs.mtl", },
+							materials = { "mat/rumpf_4.mtl", "mat/glas_13_rhs.mtl", },
 							mesh = "msh/shared/tuer_vorne_lod2.msh",
 							name = "door_front",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 3.344230175018310546875, -1.24212539196014404296875, 0.38203132152557373046875, 1, },
@@ -523,15 +523,15 @@ return {
 		},
 		metadata = { 
 			availability = { 
-				yearFrom = 1988,
-				yearTo = 2000,
+				yearFrom = 1981,
+				yearTo = 1992,
 			},
 			cost = { 
 				price = -1,
 			},
 			description = { 
 				description = _("MB_O303_Facelift_desc"),
-				name = _("MB_O303_8_name"),
+				name = _("MB_O303_4_name"),
 			},
 			emissions = { 
 				noise = { 
@@ -549,12 +549,12 @@ return {
 				engines = {
 					{ 
 						power = 213,
-						tractiveEffort = 25,
+						tractiveEffort = 35,
 						type = "DIESEL",
 					},
 				},
 				topSpeed = 27.77777862548828125,
-				weightEmpty = 15000,
+				weightEmpty = 13000,
 				weightMaxPayload = 0,
 			},
 		   extent = {
@@ -992,16 +992,6 @@ return {
 					{ 
 						animation = "sitting",
 						group = "RootNode",
-						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.5499999523162841796875, -0.449999988079071044921875, 1.25, 1, },
-					},
-					{ 
-						animation = "sitting",
-						group = "RootNode",
-						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.5499999523162841796875, -0.949999988079071044921875, 1.25, 1, },
-					},
-					{ 
-						animation = "sitting",
-						group = "RootNode",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.400000095367431640625, 0.949999988079071044921875, 1.25, 1, },
 					},
 					{ 
@@ -1068,6 +1058,16 @@ return {
 						animation = "sitting",
 						group = "RootNode",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.44999980926513671875, 0.449999988079071044921875, 1.25, 1, },
+					},
+					{ 
+						animation = "sitting",
+						group = "RootNode",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.44999980926513671875, -0.449999988079071044921875, 1.25, 1, },
+					},
+					{ 
+						animation = "sitting",
+						group = "RootNode",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.44999980926513671875, -0.949999988079071044921875, 1.25, 1, },
 					},
 					{ 
 						animation = "sitting",
@@ -1149,10 +1149,11 @@ return {
 						},
 					},
 				},
-				engineTags = { "BUS", },
+				engineTransportModes = { "BUS", },
 				groupFileName = "menu_mb_o303.mdl",
 				loadSpeed = 3,
-				tags = { "BUS", },
+				transportModes = {  "BUS", },
+				filterTags = { "default", },
 			},
 		},
 		version = 2,
