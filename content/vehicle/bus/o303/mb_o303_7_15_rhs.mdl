@@ -533,13 +533,15 @@ return {
 				description = _("MB_O303_Facelift_desc"),
 				name = _("MB_O303_7_name"),
 			},
-			emissions = {
-				noise = {
+			emissions = { 
+				noise = { 
+					score = -1,
 					idle = -1,
 					power = -1,
 					speed = -1,
 				},
-				pollution = {
+				pollution = { 
+					score = -1,
 					idle = -1,
 					power = -1,
 					speed = -1,
